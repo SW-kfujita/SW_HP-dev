@@ -1,0 +1,394 @@
+@charset "utf-8"
+
+
+/* SECTION STAFF TOP
+ * -----------------------------------------------*/
+
+.section-staff-top
+  .sec-header
+    padding: 25px 0 37px
+    .list-filter
+      -js-display: flex
+      +display-flex
+      +align-items(center)
+      +justify-content(center)
+      width: 100%
+      li
+        margin: 0 5px
+        a
+          display: block
+          +border-radius(25px)
+          padding: 12px 15px
+          border: 3px solid #d6d6d6
+          font-size: 16px
+          font-weight: bold
+          line-height: 1
+          text-align: center
+          white-space: nowrap
+          &:hover,
+          &.active
+            border-color: #d52a3c
+          .ie &
+            padding: 14px 20px 8px
+  .sec-main
+    background: #003376
+    position: relative
+    overflow: hidden
+    &:before
+      content: " "
+      display: block
+      width: 0
+      height: 0
+      border: solid 32px transparent
+      border-top: solid 32px #fff
+      position: absolute
+      top: 0
+      left: 50%
+      +translateX(-50%)
+      z-index: 1
+    &:after
+      content: " "
+      display: block
+      width: 100%
+      height: 100%
+      background: #efb509
+      position: absolute
+      top: 0
+      left: 50%
+      z-index: 0
+    .sec-inner
+      padding: 100px 5.625% 100px
+      position: relative
+      z-index: 1
+
+@media (max-width: $base-sm-break)
+
+  .section-staff-top
+    .sec-header
+      padding: .2rem 0 .3rem
+      .list-filter
+        +flex-wrap(wrap)
+        padding: 0
+        width: auto
+        margin: 0
+        li
+          width: auto
+          margin: 0 .03rem .13rem
+          a
+            +border-radius(.25rem)
+            padding: .11rem .1rem .09rem
+            border-width: .03rem
+            font-size: .18rem
+            letter-spacing: -.05em
+    .sec-main
+      &:before
+        border-width: .32rem
+      .sec-inner
+        padding: .7rem 0 .82rem
+      .list-interview
+        li
+          a
+            .image
+              height: 2.13rem
+              position: relative
+              img
+                width: auto
+                height: 100%
+                position: absolute
+                top: 0
+                left: 50%
+                +translateX(-50%)
+            .info
+              .post
+                font-size: .18rem
+
+
+
+/* SECTION STAFF PEOPLE
+ * -----------------------------------------------*/
+
+.section-people-banner
+  .sec-inner
+    .image
+      img
+        display: block
+        margin: 0 auto
+
+@media (max-width: $base-sm-break)
+
+  .section-people-banner
+    padding-top: .1rem
+    .sec-inner
+      .image
+        img
+          width: 100%
+
+
+.section-people-articles
+  padding: 50px 0 0
+  .sec-title-general
+    margin-bottom: 40px
+  .sec-inner.bg-gray
+    background-color: #eae9e3
+  .grid-horizontal
+    -js-display: flex
+    +display-flex
+    +justify-content(space-between)
+    +align-items(center)
+    padding: 55px 0
+    .content
+      width: 500px
+      font-size: 16px
+      line-height: 2.2
+    .image
+      width: 505px
+      img
+        display: block
+  .grid-vertical
+    padding-top: 20px
+    .content
+      font-size: 16px
+      line-height: 2.2
+      text-align: center
+    .image
+      margin-top: 55px
+      img
+        display: block
+
+@media (max-width: $base-sm-break)
+
+  .section-people-articles
+    padding: .5rem 0 0
+    .sec-title-general
+      margin-bottom: .48rem
+    .grid-horizontal
+      display: block
+      padding: .2rem 0 .35rem
+      .content
+        width: auto
+        font-size: .2rem
+        line-height: 1.8
+        text-align: center
+      .image
+        margin-top: .2rem
+        width: auto
+        img
+          width: 5.05rem
+          margin: 0 auto
+    .grid-vertical
+      padding-top: 0
+      margin-top: -.05rem
+      .content
+        font-size: .2rem
+        line-height: 1.8
+      .image
+        margin: .4rem -.2rem 0
+        img
+          width: 100%
+          margin: 0 auto
+
+
+/* SECTION PEOPLE CAREER
+ * -----------------------------------------------*/
+
+.section-people-career
+  padding-top: 56px
+  .sec-inner
+  .grid-carrer
+    -js-display: flex
+    +display-flex
+    +justify-content(space-between)
+    .col
+      width: 505px
+      padding: 40px 20px 60px
+      border: 3px solid #eae9e3
+      .title
+        display: block
+        position: relative
+        margin-bottom: 60px
+        font-size: 26px
+        font-weight: bold
+        text-align: center
+        &:after
+          content: " "
+          display: block
+          width: 20px
+          height: 4px
+          background: #efb509
+          position: absolute
+          bottom: -27px
+          left: 50%
+          +translateX(-50%)
+      .content
+        font-size: 16px
+        line-height: 1.8
+        text-align: center
+
+@media (max-width: $base-sm-break)
+
+  .section-people-career
+    padding-top: .3rem
+    .grid-carrer
+      display: block
+      .col
+        width: auto
+        padding: .4rem .2rem
+        border-width: .03rem
+        margin-top: .1rem
+        &:first-child
+          margin-top: 0
+        .title
+          margin-bottom: .5rem
+          font-size: .26rem
+          &:after
+            width: .2rem
+            height: .04rem
+            bottom: -.27rem
+        .content
+          font-size: .2rem
+
+
+/* SECTION PEOPLE SCHEDULE
+ * -----------------------------------------------*/
+
+.section-people-schedule
+  padding: 50px 0 100px
+  .sec-title-general
+    margin-bottom: 70px
+  .sec-schedule
+    margin-bottom: 50px
+    +clearfix
+    .list
+      float: left
+      width: 517px
+      &:first-child
+        margin-right: 16px
+      li
+        padding-top: 20px
+        position: relative
+        +clearfix
+        &:first-child
+          padding-top: 0
+        &:after
+          content: " "
+          display: block
+          width: 5px
+          height: 100%
+          background: #efb509
+          position: absolute
+          top: 0
+          left: 20px
+          z-index: 0
+        .time
+          float: left
+          width: 46px
+          position: relative
+          z-index: 10
+          img
+            display: block
+        .content
+          float: right
+          width: 451px
+          .title
+            margin-bottom: 15px
+            color: #efb509
+            font-size: 24px
+            font-weight: bold
+            line-height: 1
+            .ie &
+              position: relative
+              top: 3px
+          .desc
+            min-height: 84px
+            padding-left: 5px
+            font-size: 16px
+            font-weight: bold
+            line-height: 1.8
+
+    .list.list-end li:last-child:after
+      height: 30px
+
+  .offday
+    -js-display: flex
+    +display-flex
+    +flex-wrap(nowrap)
+    +justify-content(space-between)
+    padding: 25px
+    background: #eae9e3
+    .content
+      width: 650px
+      .title
+        padding: 5px 0
+        margin-bottom: 30px
+        color: #efb509
+        font-size: 24px
+        font-weight: bold
+        text-transform: uppercase
+      p
+        font-size: 16px
+        font-weight: bold
+    .image
+      width: 332px
+      img
+        display: block
+
+@media (max-width: $base-sm-break)
+
+  .section-people-schedule
+    padding: .5rem 0 .75rem
+    .sec-title-general
+      margin-bottom: .7rem
+    .sec-schedule
+      margin-bottom: .85rem
+      +clearfix
+      .list
+        float: none
+        width: auto
+        margin: 0 !important
+        li
+          padding-top: .4rem
+          &:first-child
+            padding-top: 0
+          &:after
+            width: .05rem
+            left: .25rem
+          .time
+            width: .56rem
+            img
+              width: .46rem
+              margin: 0 auto
+          .content
+            width: 5.31rem
+            .title
+              margin-bottom: .15rem
+              font-size: .28rem
+            .desc
+              min-height: 0
+              padding-left: .05rem
+              font-size: .2rem
+              line-height: 1.8
+
+      .list.list-end li:first-child
+        padding-top: .4rem
+      .list.list-end li:last-child:after
+        height: .6rem
+
+    .offday
+      display: block
+      padding: .2rem .2rem .3rem
+      margin: 0 -.2rem
+      .content
+        width: auto
+        margin-bottom: .2rem
+        .title
+          padding: 0
+          margin-bottom: .3rem
+          font-size: .28rem
+          text-align: center
+        p
+          font-size: .2rem
+      .image
+        width: auto
+        img
+          width: 3.32rem
+          margin: 0 auto

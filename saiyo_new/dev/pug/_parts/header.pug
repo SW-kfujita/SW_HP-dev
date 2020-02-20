@@ -1,0 +1,52 @@
+header#header(class=bodyClass!='page-top' ? 'header-default' : '')
+  if bodyClass=='page-top'
+    h1.logo
+      a(href=path+"/")
+        img.md(src=path+"/img/common/header_logo.png" alt="Skywill Recruitment")
+        img.sm(src=path+"/img/common/sp/header_logo.png" alt="Skywill Recruitment")
+  else
+    .logo
+      a(href=path+"/")
+        img.md(src=path+"/img/common/header_logo.png" alt="Skywill Recruitment")
+        img.sm(src=path+"/img/common/sp/header_logo.png" alt="Skywill Recruitment")
+  nav.navigation
+    ul.menu.scrollable
+      li
+        a(href=path+"/message") Message
+          .arrow
+        ul.dropdown
+          li
+            a(href=path+"/message/person.html") Person
+      li
+        a(href=path+"/staff") Interview
+      li
+        a(href=path+"/company") About
+          .arrow
+        ul.dropdown
+          li
+            a(href=path+"/company/edusys.html") Edusys
+          li
+            a(href=path+"/company/welfare.html") Welfare
+      li
+        a(href=path+"/works") Works
+          .arrow
+        ul.dropdown
+          li
+            a(href=path+"/works/active.html") Active
+          li
+            a(href=path+"/works/cloud.html") Cloud
+          li
+            a(href=path+"/works/development.html") Development
+          li
+            a(href=path+"/works/support.html") Support
+          li
+            a(href=path+"/works/marketing.html") Marketing
+          li
+            a(href=path+"/works/consulting.html") Consulting
+      li
+        a(href=path+"/faq") FAQ
+    a.nav-btn(href="#")
+      span Job list
+    a.menu-btn
+
+.overlay-menu#overlay-menu

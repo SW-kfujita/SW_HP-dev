@@ -1,0 +1,371 @@
+@charset "utf-8"
+
+.item img
+  display: inline-block
+  vertical-align: middle
+  max-width: 100%
+
+.section-company-about
+  padding-bottom: 35px
+  position: relative
+  z-index: 10
+
+  .about-company
+    overflow: hidden
+
+  .row
+    overflow: hidden
+    margin-left: -5px
+    margin-right: -5px
+  .box
+    float: left
+    padding-left: 5px
+    padding-right: 5px
+    text-align: center
+  .item
+    margin-bottom: 10px
+  .bg01
+    background: #2a8cca
+  .bg02
+    background: #da4353
+  .bg03
+    background: #ecae30
+
+  .description
+    margin-bottom: 70px
+    text-align: center
+    font-size: 20px
+    font-weight: bold
+  .sec-title-general
+    margin-bottom: 55px
+
+@media (min-width: $base-sm-break + 1)
+  .col-md-2 .box
+    width: 50%
+  .col-md-3 .box
+    width: 33.33333%
+  .col-md-x
+    .box01
+      width: 566px
+    .box02
+      width: 247px
+
+.section-company-questionnaire
+  background: #eae9e3
+  padding: 50px 0 80px
+  .sec-title-general
+    margin-bottom: 42px
+.list-questionare
+  -js-display: flex
+  +display-flex
+  +flex-wrap(wrap)
+  +justify-content(space-between)
+  position: relative
+  width: 1050px
+  .item
+    background: #fff
+    margin-bottom: 22px
+    text-align: center
+
+.section-edusys
+
+  .sec-title-general
+    margin-bottom: 60px
+
+  img
+    display: inline-block
+    vertical-align: middle
+    max-width: 100%
+  .wrapper
+    position: relative
+    overflow: hidden
+    padding-bottom: 20px
+  figure
+    position: absolute
+    width: 33.72%
+    left: 50%
+    +transform(translateX(-50%))
+    bottom: 0
+    z-index: 10
+  .list-skills
+    position: relative
+    overflow: hidden
+    z-index: 90
+    margin-bottom: 100px
+    &:before,&:after
+      content: ""
+      height: 100%
+      width: 50%
+      position: absolute
+      top: 0
+      z-index: 0
+    &:before
+      right: 50%
+      margin-right: 3px
+      background: #003376
+    &:after
+      left: 50%
+      margin-left: 2px
+      background: #efb509
+    .head
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 26px
+      color: #fff
+      padding: 40px 0
+      position: relative
+      z-index: 10
+      span
+        display: block
+        font-size: 0.538em
+  .skill-item
+    position: relative
+    z-index: 100
+    background: #fff
+    height: 77px
+    width: 214px
+    margin-bottom: 20px
+    span
+      display: inline-block
+      vertical-align: middle
+      font-weight: bold
+      font-size: 20px
+      line-height: 1.2
+    &:before
+      content: ""
+      display: inline-block
+      height: 100%
+      vertical-align: middle
+    &:after
+      content: ""
+      width: 0
+      border-style: solid
+      border-color: transparent #fff
+      position: absolute
+      top: 50%
+      margin-top: -6px
+  .technical,.human
+    float: left
+    width: 50%
+  .technical
+    .head span
+      color: #45adfe
+    .skill-item
+      span
+        color: #003376
+      &:after
+        border-width: 8px 0 8px 12px
+        left: 100%
+  .human
+    .head span
+      color: #f6ff00
+    .skill-item
+      span
+        color: #efb509
+      &:after
+        border-width: 8px 12px 8px 0
+        right: 100%
+
+@media (min-width: $base-sm-break + 1)
+  .list-skills
+    .skill01
+      margin-left: 145px
+    .skill02
+      margin-left: 50px
+    .skill03
+      margin-left: 202px
+    .skill04
+      margin-left: 165px
+    .skill05
+      margin-left: 285px
+    .skill06
+      margin-left: 135px
+
+.text-warning
+  color: #d52a3c
+
+.section-vacation
+  .sec-title-general
+    margin-bottom: 50px
+  .lead
+    font-size: 30px
+    font-weight: bold
+    line-height: 1.2
+    margin-bottom: 50px
+    letter-spacing: 0.06em
+.list-welfare
+  overflow: hidden
+  padding: 42px 0
+  li
+    float: left
+    background: #fff
+    padding: 20px 15px 0
+    min-height: 330px
+    width: 328px
+    margin-right: 33px
+    margin-bottom: 35px
+    text-align: center
+    &:nth-child(3n)
+      margin-right: 0
+    &.fill-half
+      width: 508px
+      &+.fill-half
+        margin-right: 0
+.sttl
+  font-size: 26px
+  line-height: 1.2
+  font-weight: bold
+  letter-spacing: 0.06em
+  position: relative
+  padding: 20px 0
+  margin-bottom: 20px
+  text-align: center
+  &:after
+    content: ""
+    width: 20px
+    height: 4px
+    background: #efb509
+    position: absolute
+    bottom: 0
+    left: 50%
+    margin-left: -10px
+  &+.txt
+    font-size: 16px
+    line-height: 1.8
+.section-treatment
+  padding: 100px 0 0
+  .sec-title-general
+    margin-bottom: 45px
+
+@media (max-width: $base-sm-break)
+  .section-company-about
+    padding-bottom: 0.3rem
+    .box
+      width: 100%
+      .item
+        margin-bottom: 0.2rem
+    .description
+      margin: .2rem 0 .5rem
+      padding: 0 .2rem
+      font-size: .2rem
+    .sec-title-general
+      margin-bottom: .4rem
+
+  .section-company-questionnaire
+    padding: .5rem 0 .4rem
+    .sec-title-general
+      margin-bottom: .4rem
+
+  .list-questionare
+    width: auto
+    display: block
+    .item
+      margin-bottom: 0.2rem
+
+  .section-edusys
+    padding-bottom: 0
+    position: relative
+    z-index: 10
+
+    .wrapper
+      padding-bottom: 0
+
+    .sec-title-general
+      margin-top: -.3rem
+      margin-bottom: .5rem
+
+    img
+      position: relative
+      z-index: 90
+      margin: 0 auto
+    .list-skills
+      margin-bottom: 0.4rem
+
+  .section-vacation
+    position: relative
+    z-index: 10
+    .sec-title-general
+      margin-bottom: .5rem
+    .lead
+      font-size: 0.3rem
+      margin-top: -.2rem
+      margin-bottom: .4rem
+  .list-welfare
+    padding: 0.45rem 0
+    li
+      float: none !important
+      width: auto !important
+      margin: 0 0 0.1rem !important
+      min-height: 2.35rem
+      padding: 0.2rem 0.15rem
+      .txt
+        font-size: 0.2rem
+        line-height: 1.7
+  .section-treatment
+    padding: .6rem 0 0
+    .sec-title-general
+      margin-bottom: .5rem
+    .box-gray
+      padding-bottom: 0.5rem
+
+  .sttl
+    font-size: 0.26rem
+    padding: 0.2rem 0
+    &:after
+      width: 0.2rem
+      height: 0.04rem
+      margin-left: -.1rem
+
+
+
+.section-edusys-flow
+  padding: 0 0 100px
+
+@media (max-width: $base-sm-break)
+  .section-edusys-flow
+    padding: 0
+
+  .flow-sm
+    .row
+      background: #fff
+      margin: 0
+      padding: .2rem
+      &.bg-gray
+        background: #f2f2f2
+      &.row03
+        padding-bottom: .5rem
+    .image
+      img
+        display: block
+        width: 100%
+    .text-desc
+      margin-top: .1rem
+      font-size: .16rem
+    .content-text
+      padding-left: .28rem
+      margin-top: .3rem
+      dt
+        display: block
+        position: relative
+        font-size: .2rem
+        font-weight: bold
+        .num
+          display: block
+          width: .24rem
+          height: .24rem
+          position: absolute
+          top: .03rem
+          left: -.28rem
+          padding-top: .03rem
+          font-size: .14rem
+          line-height: 1
+          text-align: center
+          +border-radius(100%)
+          border: 1px solid #000
+          .mobile.android &
+            top: .01rem
+            padding-top: .05rem
+      dd
+        display: block
+        font-size: .18rem
+        margin-bottom: .15rem

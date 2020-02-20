@@ -1,0 +1,207 @@
+@charset "utf-8"
+
+
+/* SECTION WORKS LEADING
+ * -----------------------------------------------*/
+
+.section-works-leading
+  padding-bottom: 35px
+  text-align: center
+  .sec-inner
+    .title
+      margin-top: -5px
+      margin-bottom: 30px
+      font-size: 40px
+      font-weight: bold
+      color: #d52a3c
+    .content
+      font-size: 18px
+      font-weight: bold
+      line-height: 2
+      p
+        margin-top: 30px
+        &:first-child
+          margin-top: 0
+
+@media (max-width: $base-sm-break)
+
+  .section-works-leading
+    padding-bottom: .3rem
+    .sec-inner
+      .title
+        margin-top: 0
+        margin-bottom: .3rem
+        font-size: .3rem
+      .content
+        font-size: .2rem
+        line-height: 1.8
+        p
+          margin-top: .3rem
+
+
+/* SECTION WORKS BANNER
+ * -----------------------------------------------*/
+
+.section-works-banner
+  .image
+    img
+      display: block
+      width: 100%
+
+
+/* SECTION WORKS TOP
+ * -----------------------------------------------*/
+
+.section-works-top
+  padding: 54px 0 50px
+
+.list-works
+  li
+    -js-display: flex
+    +display-flex
+    +justify-content(space-between)
+    +flex-wrap(nowrap)
+    width: 100%
+    margin-top: 50px
+    &:first-child
+      margin-top: 0
+    .image
+      width: 575px
+      img
+        display: block
+    .content
+      width: 425px
+      padding-top: 45px
+      font-size: 16px
+      .title
+        font-size: 26px
+        font-weight: bold
+      .post
+        margin-top: 3px
+        color: #003376
+        font-weight: bold
+      .desc
+        margin-top: 20px
+        line-height: 2.2
+  li:nth-child(even)
+    +flex-direction(row-reverse)
+
+@media (max-width: $base-sm-break)
+
+  .section-works-top
+    padding: .95rem 0
+
+  .list-works
+    li
+      display: block
+      margin-top: .5rem
+      .image
+        width: auto
+        margin-bottom: .25rem
+        img
+          width: 100%
+      .content
+        width: auto
+        padding-top: 0
+        font-size: .18rem
+        .title
+          font-size: .26rem
+        .post
+          margin-top: .1rem
+        .desc
+          margin-top: .15rem
+          font-size: .2rem
+          line-height: 1.8
+
+
+/* SECTION WORKS ACTIVE
+ * -----------------------------------------------*/
+
+.section-works-active
+  padding: 0 0 50px
+  .sec-inner
+    .heading
+      margin-top: -5px
+      margin-bottom: 50px
+      font-size: 20px
+      font-weight: bold
+      line-height: 2
+      text-align: center
+
+@media (max-width: $base-sm-break)
+
+  .section-works-active
+    padding: .1rem 0 .5rem
+    .sec-inner
+      .heading
+        margin: 0 0 1.1rem
+        font-size: .24rem
+        line-height: 1.8
+
+
+/* SECTION WORKS CLOUD
+ * -----------------------------------------------*/
+
+.section-works-cloud
+  position: relative
+  z-index: 10
+  .heading
+    margin-top: -5px
+    padding: 0 0 70px
+    .desc
+      font-size: 24px
+      font-weight: bold
+      line-height: 1.8
+      text-align: center
+    .banner
+      display: block
+      margin: 38px auto 0
+  .article
+    padding: 70px 0
+    &.bg-gray
+      padding-top: 40px
+      background: #eae9e3
+    .sec-title-general
+      white-space: nowrap
+      margin-bottom: 50px
+      overflow: hidden
+      strong
+        line-height: 1.8
+    .content
+      font-size: 16px
+      line-height: 2.2
+      text-align: center
+      .lead
+        margin-bottom: 20px
+        font-size: 20px
+        font-weight: bold
+    .button
+      margin-top: 100px
+      .btn-entry
+        margin: 0 auto
+
+@media (max-width: $base-sm-break)
+
+  .section-works-cloud
+    .heading
+      margin-top: 0
+      padding: 0 0 .7rem
+      .desc
+        font-size: .24rem
+      .banner
+        margin-top: .45rem
+        width: 100%
+    .article
+      padding: .5rem 0
+      &.bg-gray
+        padding-top: .4rem
+      .sec-title-general
+        white-space: normal
+        margin-bottom: .35rem
+      .content
+        font-size: .2rem
+        .lead
+          margin-bottom: .20rem
+          font-size: .24rem
+      .button
+        margin-top: .75rem

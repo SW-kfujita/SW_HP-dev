@@ -1,0 +1,90 @@
+@charset "utf-8"
+
+/* SECTION FAQ LEADING
+ * -----------------------------------------------*/
+
+.section-faq-leading
+  margin-bottom: 25px
+  text-align: center
+  font-size: 20px
+  font-weight: bold
+  line-height: 1.8
+
+
+@media (max-width: $base-sm-break)
+
+  .section-faq-leading
+    margin-top: .1rem
+    margin-bottom: -.1rem
+    font-size: .22rem
+
+
+/* SECTION FAG TOP
+ * -----------------------------------------------*/
+
+.section-faq-top
+  padding-top: 50px
+  margin-bottom: 50px
+  .sec-title-general
+    margin-bottom: 30px
+
+.list-faq
+  padding: 0 10px 10px
+  background: #eae9e3
+  li
+    font-size: 16px
+    line-height: 2
+    .title
+      padding: 25px 30px 25px 80px
+      position: relative
+      &:before
+        content: "Q"
+        display: block
+        position: absolute
+        top: 25px
+        left: 23px
+        font-size: 30px
+        font-weight: bold
+        line-height: 1
+        color: #003376        
+    .content
+      padding: 20px 30px 20px 80px
+      position: relative
+      background: #fff
+      &:before
+        content: "A"
+        display: block
+        position: absolute
+        top: 20px
+        left: 23px
+        font-size: 30px
+        font-weight: bold
+        line-height: 1
+        color: #efb509
+
+@media (max-width: $base-sm-break)
+
+  .section-faq-top
+    margin-bottom: 0
+    padding-top: .5rem
+    .sec-title-general
+      margin-bottom: .45rem
+
+  .list-faq
+    padding: 0 .2rem .9rem
+    margin: 0 -.2rem
+    li
+      font-size: .2rem
+      line-height: 1.8
+      .title
+        padding: .25rem .3rem .2rem .8rem
+        &:before
+          top: .25rem
+          left: .25rem
+          font-size: .3rem
+      .content
+        padding: .2rem .3rem .2rem .8rem
+        &:before
+          top: .22rem
+          left: .25rem
+          font-size: .3rem

@@ -1,0 +1,208 @@
+extends _layouts/default
+
+block vars
+  -title        = '株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルの採用サイト。スカイウイルは、システム構築からアウトソーシングまで、幅広い分野でお客様をサポートするナレッジ・マンパワーを提供する会社です。'
+  -keywords     = '採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-top'
+  -path         = '.'
+
+block container
+
+  .main
+
+    section.section-top-mainvisual#mainvisual
+      .rw01.animated
+        .triangle
+        .text
+          p <span class="ml-01">AI/IoT</span><span class="fz-50">で</span><br />自分の市場価値<span class="fz-50">を</span><br />高<span class="fz-60">める</span>
+          p.desc AI / IoT technologies increase your market value.
+      .rw02.animated
+        .triangle
+        .text
+          p <span class="d-block">自分らしく</span><span class="d-block mt-01u">働く</span><span class="d-block fz-50 ls-03u">ワークライフバランス</span>
+          p.desc Work-life balance to<br class="sm" /> work in your way.
+
+    section.section-top-information
+      .sec-inner.animated
+        h2.title Information
+        .content
+          p 生徒と仕なけれのは同じく晩へまあですますます。なお槙さんを楽本位もう少し理解があろた機会この性質それか攻撃へという
+
+    section.section-top-message
+      .sec-inner
+        h2.sec-title.animated
+          strong メッセージ
+          small Message
+        .content.animated
+          h3.title ｢自分の理想を実現する｣
+          p スカイウイルはあなたの理想を実現できる、<br />心地よい会社でありたい。
+        .button.animated
+          a.btn-more(href=path+"/message/") More
+
+    section.section-top-interview
+      .sec-inner
+        h2.sec-title.animated
+          strong 社員インタビュー
+          small Interview
+        ul.list-interview.is-slider.animated-sp#list-interview
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img01.jpg" alt="Masato.S 頑張った分だけきちんと返ってくる 開発 / 構築")
+              .info
+                h3.name Masato.S
+                .desc 頑張った分だけきちんと<br />返ってくる
+                .post 開発 / 構築
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img02.jpg" alt="Shinichiro.K 会社は小さくても提案、参加して成長できる 構築")
+              .info
+                h3.name Shinichiro.K
+                .desc 会社は小さくても提案、<br />参加して成長できる
+                .post 構築
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img03.jpg" alt="Tomomi.S お客様からリーダーに指名される 運用・保守/構築")
+              .info
+                h3.name Tomomi.S
+                .desc お客様からリーダーに<br />指名される
+                .post 運用・保守/構築
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img04.jpg" alt="Saori.E 上司や先輩のようになりたい 運用・保守")
+              .info
+                h3.name Saori.E
+                .desc 上司や先輩のようになりたい
+                .post 運用・保守
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img05.jpg" alt="Ryota.Y 望むキャリアや働き方を大切にする 開発 / 構築")
+              .info
+                h3.name Ryota.Y
+                .desc 望むキャリアや働き方を<br />大切にする
+                .post 開発 / 構築
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img06.jpg" alt="Narumi.S 毎日が成長の連続 構築")
+              .info
+                h3.name Narumi.S
+                .desc 毎日が成長の連続
+                .post 構築
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img07.jpg" alt="Shohei.S 未経験入社でも働きやすい 運用・保守/構築")
+              .info
+                h3.name Shohei.S
+                .desc 未経験入社でも働きやすい
+                .post 運用・保守/構築
+          li.animated-pc
+            a
+              .image
+                img(src=path+"/img/top/interview_img08.jpg" alt="Maika.T みんなが笑顔で働くために バックオフィス")
+              .info
+                h3.name Maika.T
+                .desc みんなが笑顔で働くために
+                .post バックオフィス
+        .button.animated
+          a.btn-more(href=path+"/staff/") More
+
+    section.section-top-about
+      .sec-inner
+        .sec-content
+          h2.sec-title.animated
+            strong 私たちについて
+            small About us
+          .content.animated
+            p はれやかな青空のように、広大で澄んだ意志を持って<br />成長したいという意味を込めた社名の通り、<br />スカイウイルは、高い目標に向かって成長を続けています。
+          .button.animated
+            a.btn-more(href=path+"/company/") More
+        ul.list-about
+          li.animated
+            .image
+              img.md(src=path+"/img/top/about_img01.jpg" alt="スカイウイルが求めている人向かない人")
+              img.sm(src=path+"/img/top/sp/about_img01.jpg" alt="スカイウイルが求めている人向かない人")
+            .desc
+              span スカイウイルが<br class="sm" />求めている人<br class="sm" />向かない人
+          li.animated
+            .image
+              img.md(src=path+"/img/top/about_img02.jpg" alt="福利厚生")
+              img.sm(src=path+"/img/top/sp/about_img02.jpg" alt="福利厚生")
+            .desc
+              span 福利厚生
+          li.animated
+            .image
+              img.md(src=path+"/img/top/about_img03.jpg" alt="教育・研修制度")
+              img.sm(src=path+"/img/top/sp/about_img03.jpg" alt="教育・研修制度")
+            .desc
+              span 教育・研修制度
+          li.animated
+            .image
+              img.md(src=path+"/img/top/about_img04.jpg" alt="数字から見るスカイウイル")
+              img.sm(src=path+"/img/top/sp/about_img04.jpg" alt="数字から見るスカイウイル")
+            .desc
+              span 数字から見る<br class="sm" />スカイウイル
+
+    section.section-top-works
+      .sec-inner
+        .grid-works
+          .block.block01.b-item.c-black.animated
+            .inner
+              .icon
+                img(src=path+"/img/top/works_icon01.png" alt="インフラ・クラウド構築 IT INFRASTRUCTURE ENGINEERING")
+              .name インフラ・<br class="sm" />クラウド構築
+              .desc IT Infrastructure<br class="sm" /> Engineering
+          .block.block02.b-item.c-blue.animated
+            .inner
+              .icon
+                img(src=path+"/img/top/works_icon02.png" alt="テクニカルサポート TECHNICAL SUPPORT")
+              .name テクニカル<br class="sm" />サポート
+              .desc Technical support
+          .block.block03.b-image.animated
+            img.md(src=path+"/img/top/works_img01.jpg" alt="Skywill")
+            img.sm(src=path+"/img/top/sp/works_img01.jpg" alt="Skywill")
+          .block.block04.b-item.c-blue.animated
+            .inner
+              .icon
+                img(src=path+"/img/top/works_icon03.png" alt="アプリケーション開発 APPLICATION DEVELOPMENT")
+              .name アプリケーション<br class="sm" />開発
+              .desc Application Development
+          .block.block05.b-title.animated
+            h2.sec-title
+              strong 私たちの<br class="sm">仕事
+              small Works
+            a.btn-more(href=path+"/works/") More
+          .block.block06.b-item.c-black.animated
+            .inner
+              .icon
+                img(src=path+"/img/top/works_icon04.png" alt="マーケティングサービス MARKETING")
+              .name マーケティング<br class="sm" />サービス
+              .desc Marketing
+          .block.block07.b-image.animated
+            img.md(src=path+"/img/top/works_img02.jpg" alt="image")
+            img.sm(src=path+"/img/top/sp/works_img02.jpg" alt="image")
+          .block.block08.b-item.c-black.animated
+            .inner
+              .icon
+                img(src=path+"/img/top/works_icon05.png" alt="ITコンサルティング IT CONSULTING")
+              .name ITコンサル<br class="sm" />ティング
+              .desc IT consulting
+          .block.block09.b-image.md.animated
+            img(src=path+"/img/top/works_img03.jpg" alt="image")
+
+    section.section-top-gallery
+      .sec-inner
+        h2.sec-title.animated
+          strong ギャラリー
+          small Gallery
+        .image.animated
+          img.md(src=path+"/img/top/gallery_img.jpg" alt="ギャラリーGALLERY")
+          img.sm(src=path+"/img/top/sp/gallery_img.jpg" alt="ギャラリーGALLERY")
+        .button.animated
+          a.btn-more(href=path+"/event/") More

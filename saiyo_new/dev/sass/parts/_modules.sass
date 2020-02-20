@@ -1,0 +1,541 @@
+@charset "utf-8"
+
+
+/* COMMON TITLES
+ * -----------------------------------------------*/
+
+.sec-title
+  strong
+    display: block
+    font-size: 60px
+    font-weight: bold
+    line-height: 1
+  small
+    display: block
+    margin-top: 25px
+    font-size: 18px
+    font-weight: bold
+    line-height: 1
+    text-transform: uppercase
+
+@media (max-width: $base-sm-break)
+
+  .sec-title
+    strong
+      font-size: .6rem
+    small
+      margin-top: .25rem
+      font-size: .22rem
+
+
+.sec-title-general
+  position: relative
+  padding-top: 55px
+  text-align: center
+  &:before
+    content: " "
+    display: block
+    width: 3px
+    height: 36px
+    background: #d52a3c
+    position: absolute
+    top: 0
+    left: 50%
+    margin-left: -1px
+  strong
+    display: block
+    font-size: 40px
+    font-weight: bold
+  small
+    display: block
+    margin-top: 10px
+    font-size: 14px
+    font-weight: bold
+    color: #d52a3c
+    text-transform: uppercase
+    line-height: 1
+
+@media (max-width: $base-sm-break)
+
+  .sec-title-general
+    padding-top: .55rem
+    &:before
+      width: .03rem
+      height: .36rem
+      margin-left: -.01rem
+    strong
+      font-size: .3rem
+    small
+      margin-top: .15rem
+      font-size: .14rem
+
+
+/* COMMON BUTTONS
+ * -----------------------------------------------*/
+
+.btn-more
+  -js-display: flex
+  +display-flex
+  +align-items(center)
+  +justify-content(center)
+  width: 188px
+  height: 55px
+  border: 3px solid #d5d5d5
+  background: #fff url(../img/common/icon20.png) 88% 50% no-repeat
+  color: #000
+  line-height: 1
+  font-size: 14px
+  font-weight: bold
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  +border-radius(28px)
+  +transition(background-position 0.2s ease)
+  &:hover
+    background-position: 90% 50%
+  .ie &
+    padding-top: 7px
+
+@media (max-width: $base-sm-break)
+
+  .btn-more
+    width: 2.85rem
+    height: .96rem
+    border-width: 0.03rem
+    background: #fff url(../img/common/sp/icon20.png) 89% 50% no-repeat
+    background-size: .25rem auto
+    font-size: .2rem
+    +border-radius(.5rem)
+
+.btn-entry
+  -js-display: flex
+  +display-flex
+  +align-items(center)
+  +justify-content(center)
+  width: 310px
+  height: 50px
+  background: #d52a3c url(../img/common/icon22.png) 91% 50% no-repeat
+  color: #fff
+  line-height: 1
+  font-size: 16px
+  font-weight: bold
+  letter-spacing: 0.05em
+  +border-radius(25px)
+  +transition(background-position 0.2s ease)
+  &:hover
+    background-position: 93% 50%
+  .ie &
+    padding-top: 5px
+
+@media (max-width: $base-sm-break)
+
+  .btn-entry
+    width: 5rem
+    height: 1rem
+    background: #d52a3c url(../img/common/icon22.png) 88% 50% no-repeat
+    background-size: .16rem auto
+    font-size: .24rem
+    +border-radius(.5rem)
+    &:hover
+      background-position: 90% 50%
+
+.btn-sns
+  -js-display: flex
+  +display-flex
+  +align-items(center)
+  +justify-content(center)
+  width: 290px
+  height: 55px
+  border: 3px solid #d5d5d5
+  background: #fff url(../img/common/icon20.png) 92% 50% no-repeat
+  color: #000
+  line-height: 1
+  font-size: 14px
+  font-weight: bold
+  letter-spacing: 0.05em
+  +border-radius(28px)
+  +transition(background-position 0.2s ease)
+  &:hover
+    background-position: 94% 50%
+  .ie &
+    padding-top: 5px
+
+@media (max-width: $base-sm-break)
+
+  .btn-sns
+    width: 5.05rem
+    height: .98rem
+    border-width: .03rem
+    background: #fff url(../img/common/icon20.png) 90% 50% no-repeat
+    background-size: .16rem auto
+    font-size: .22rem
+    +border-radius(.5rem)
+    &:hover
+      background-position: 92% 50%
+
+
+/* COMMON BREADCRUMBS
+ * -----------------------------------------------*/
+
+.breadcrumb
+  padding: 7px 0
+  position: relative
+  z-index: 10
+  ul
+    width: 1050px
+    margin: 0 auto
+    -js-display: flex
+    +display-flex
+    li
+      position: relative
+      margin-left: 30px
+      line-height: 1
+      &:before
+        content: " "
+        display: block
+        width: 12px
+        height: 8px
+        background: url(../img/common/icon21.png) 50% 50% no-repeat
+        position: absolute
+        top: 50%
+        left: -20px
+        +translateY(-50%)
+        .ie &
+          top: 35%
+      &:first-child
+        margin-left: 0
+        &:before
+          display: none
+
+@media (max-width: $base-sm-break)
+
+  .breadcrumb
+    padding: .14rem .2rem
+    background: #f4f4f1
+    font-size: .16rem
+    line-height: 1
+    ul
+      width: auto
+      li
+        margin-left: .35rem
+        &:before
+          width: .12rem
+          height: .08rem
+          background-size: 100% auto
+          top: 50%
+          left: -.24rem
+          .mobile.android.chrome &
+            top: 40%
+
+
+/* COMMON PAGE TITLE
+ * -----------------------------------------------*/
+
+.page-title
+  height: 512px
+  background: #fff
+  margin-top: -35px
+  overflow: hidden
+  position: relative
+  z-index: 0
+  &:before
+    content: " "
+    display: block
+    width: 100%
+    height: 360px
+    margin-right: 361px
+    background: #003376
+    position: absolute
+    top: 85px
+    right: 50%
+    z-index: 10
+    +skewX(-26deg)
+  &:after
+    content: " "
+    display: block
+    width: 120%
+    height: 360px
+    margin-left: -440px
+    background: #efb509
+    position: absolute
+    top: 0
+    left: 50%
+    z-index: 5
+    +skew(-26deg, 0)
+  .title
+    display: block
+    width: 100%
+    position: absolute
+    left: 0
+    top: 102px
+    z-index: 100
+    %title-text
+      display: block
+      color: #fff
+      font-size: 26px
+      font-weight: bold
+      line-height: 1
+      text-transform: uppercase
+      text-align: center
+      letter-spacing: 0.02em
+    small
+      @extend %title-text
+    strong
+      @extend %title-text
+      height: 78px
+      margin-top: 22px
+      padding: 14px 0
+      position: relative
+      color: #000
+      font-size: 54px
+      letter-spacing: -0.05em
+      &:before,
+      &:after
+        content: " "
+        display: block
+        width: 272px
+        height: 3px
+        background: #000
+        position: absolute
+        top: 0
+        left: 50%
+        +translateX(-50%)
+      &:after
+        top: auto
+        bottom: 0
+      .ie &
+        padding-top: 22px
+  .line
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    width: 100%
+    height: 100%
+    &:before,
+    &:after
+      content: " "
+      display: block
+      width: 7px
+      height: 200px
+      background: #000
+      +skewX(-26deg)
+      position: absolute
+      top: 35px
+      left: 50%
+      margin-left: -462px
+    &:after
+      background: #d8d8d8
+      top: auto
+      bottom: 0
+      margin-left: -393px
+
+
+@media (max-width: $base-sm-break)
+
+  .page-title
+    height: 2.86rem
+    margin: 0
+    &:before
+      height: 2.02rem
+      margin-right: 2.24rem
+      top: .5rem
+    &:after
+      height: 2.02rem
+      margin-left: -2.68rem
+    .title
+      top: .45rem
+      small
+        font-size: .2rem
+      strong
+        height: auto
+        margin-top: .13rem
+        padding: .155rem 0
+        font-size: .32rem
+        letter-spacing: -0.02em
+        &:before,
+        &:after
+          width: 1.52rem
+          height: .02rem
+    .line
+      &:before,
+      &:after
+        width: .04rem
+        height: 1rem
+        top: .18rem
+        margin-left: -2.78rem
+      &:after
+        top: auto
+        margin-left: -2.43rem
+
+
+/* LIST INTERVIEW
+ * -----------------------------------------------*/
+
+.list-interview
+  +display-flex
+  +flex-wrap(wrap)
+  margin: 0 auto
+  li
+    width: 23.8%
+    height: 393px
+    background: #fff
+    margin: 30px 0 0 1.6%
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4)
+      margin-top: 0
+    &:nth-child(4n+1)
+      margin-left: 0
+    a
+      display: block
+      outline: none
+      .image
+        width: 100%
+        height: 213px
+        background: #eee
+        position: relative
+        overflow: hidden
+        img
+          display: block
+          width: 100%
+          position: absolute
+          top: 50%
+          left: 50%
+          +transform(translate(-50%, -50%) scale(1))
+          +transition(all .26s ease)
+      .image:hover
+        img
+          +transform(translate(-50%, -50%) scale(1.1))
+      .info
+        height: 90px
+        padding-top: 22px
+        text-align: center
+        font-weight: bold
+        color: #003376
+        .name
+          position: relative
+          margin-bottom: 38px
+          font-size: 25px
+          line-height: 1
+          &:after
+            content: " "
+            display: block
+            height: 2px
+            width: 100px
+            background: #003376
+            position: absolute
+            bottom: -20px
+            left: 50%
+            +translateX(-50%)
+        .desc
+          +display-flex
+          +align-items(center)
+          +justify-content(center)
+          height: 52px
+          font-size: 20px
+          line-height: 1.3
+          letter-spacing: 0.05em
+        .post
+          margin-top: 10px
+          font-size: 14px
+          line-height: 1
+          color: #787878
+  li:nth-child(4n),
+  li:nth-child(4n-1)
+    a
+      .name
+        &:after
+          background-color: #efb509
+      .info
+        color: #efb509
+
+.ie9 .list-interview,
+.ie10 .list-interview
+  display: block
+  +clearfix
+  li
+    float: left
+    a
+      .info
+        .desc
+          display: block
+          text-align: center
+
+@media (max-width: $base-md-break)
+
+  .list-interview
+    li
+      a
+        .image
+          img
+            width: auto
+            height: 100%
+
+@media (max-width: $base-sm-break)
+
+  .list-interview
+    margin: 0 .1rem
+    li
+      width: 2.9rem
+      height: 3.93rem
+      margin: .3rem .1rem 0 !important
+      &:nth-child(1)
+      &:nth-child(2)
+        margin-top: 0
+      a
+        .image
+          height: auto
+          img
+            width: 100%
+            position: static
+            +transform(none)
+            +transition(none)
+        .image:hover
+          img
+            +transform(none)
+        .info
+          height: 1.8rem
+          padding-top: .2rem
+          text-align: center
+          font-weight: bold
+          color: #003376
+          .name
+            margin-bottom: .55rem
+            font-size: .25rem
+            &:after
+              height: .02rem
+              width: 1rem
+              bottom: -0.2rem
+          .desc
+            +display-flex
+            +align-items(center)
+            +justify-content(center)
+            height: .2rem
+            font-size: .2rem
+            line-height: 1.3
+          .post
+            margin-top: .25rem
+            font-size: .14rem
+
+    li:nth-child(odd)
+      a
+        .name
+          &:after
+            background-color: #003376
+        .info
+          color: #003376
+    li:nth-child(even)
+      a
+        .name
+          &:after
+            background-color: #efb509
+        .info
+          color: #efb509
+
+  .list-interview.is-slider
+    display: block
+    margin: 0 -0.2rem
+    li
+      width: 3.36rem
+      margin: 0 .1rem !important

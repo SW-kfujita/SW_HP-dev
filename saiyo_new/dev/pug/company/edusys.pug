@@ -1,0 +1,150 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '教育・研修制度 | スカイウイルについて | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、教育・研修制度をご紹介します。'
+  -keywords     = '教育,研修,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-company-edusys'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/company") スカイウイルについて
+        li
+          span 教育･研修制度
+
+    h1.page-title.animated
+      span.line
+      span.title
+        small Education and training system
+        strong 教育･研修制度
+
+    section.section-edusys
+      h2.sec-title-general.animated
+        strong 技術スキルとヒューマンスキル
+        small Technical skills and human skills
+      .sec-inner
+        .wrapper
+          .text-intro.text-center.animated
+            p IT業界における教育については、大きく"技術スキル"と"ヒューマンスキル"の２つがあると考えています。<br>近年のIT市場においては、ヒューマンスキルに対する要望が高く、その部分を強化する必要性が年々高まっているため、スカイウイルでは技術スキルとともに、社員のヒューマンスキルの強化を図るため、以下の研修体制を整えております。<br>技術者として、社会人として、経営層として、社員の育成をスカイウイルは重要なテーマと考え、取り組んでいます。
+        .list-skills.text-center.animated
+          .wrapper.md
+            figure
+              img(src="../img/company/human.png", alt="技術スキル TECHNICAL SKILLS ヒューマンスキル HUMAN SKILLS")
+            .technical
+              h3.head 技術スキル
+                span Technical skills
+              .skill-item.skill01
+                span ネットワーク
+              .skill-item.skill02
+                span プログラミング
+              .skill-item.skill03
+                span プロジェクト<br>マネジメント
+
+            .human
+              h3.head ヒューマンスキル
+                span Human skills
+              .skill-item.skill04
+                span コミュニケーション
+              .skill-item.skill05
+                span リーダーシップ
+              .skill-item.skill06
+                span 主体性を持った行動
+          img.sm(src="../img/company/skill.png", alt="技術スキルとヒューマンスキル TECHNICAL SKILLS AND HUMAN SKILLS")
+    
+    section.section-edusys-flow
+        .flow-image.wrapper.md
+          img.animated(src="../img/company/chart.jpg", alt="技術スキルとヒューマンスキル TECHNICAL SKILLS AND HUMAN SKILLS")
+        .flow-sm.sm
+          .row.row01.wrapper
+            .image
+              img(src="../img/company/flow_img01.png", alt="基礎研修 - 応用研修")
+            dl.content-text
+              dt
+                span.num 1
+                span.text Linux基礎講習
+              dd (OSインストール、コマンド実行サービスの停止と起動などの基礎知識)
+              dt
+                span.num 2
+                span.text Linux設計講習
+              dd (DNSサーバ、Webサーバ、メールサーバ構築）)
+              dt
+                span.num 3
+                span.text ストレージ基礎講習
+              dd (用語概要、機能概要、製品知識)
+              dt
+                span.num 4
+                span.text ストレージ設計講習
+              dd (実際の詳細設計書に基づいた設計演習、複数回のレビュー)
+              dt
+                span.num 5
+                span.text VM基礎講習
+              dd (作成・実行・停止などの機能概要、機能仕様)
+              dt
+                span.num 6
+                span.text VM設計講習
+              dd (実際の詳細設計所に基づいた設計演習、構築構築レビュー)
+              dt
+                span.num 7
+                span.text NW基礎講習
+              dd (ルーティング、スイッチングの基礎知識、実機による演習)
+              dt
+                span.num 8
+                span.text NW設計講習
+              dd (実際の方式・詳細設計書に基づいた設計演習レビュー)
+              dt
+                span.num 9
+                span.text システム運用基礎講習
+              dd (運用管理の基礎知識、生涯・オペレーション・サービスレベル・性能管理などの基礎知識)
+              dt
+                span.num 10
+                span.text システム運用設計講習
+              dd (システム運用設計の手法、運用設計書の種類、実際の設計書に基づいた設計演習、レビュー)
+          .row.row02.bg-gray.wrapper
+            .image
+              img(src="../img/company/flow_img02.png", alt="ヒューマンスキル研修")
+            .text-desc.text-right ※半期に2回程度実施
+            dl.content-text
+              dt
+                span.num 11
+                span.text 現場営業力アップ講座
+              dd (ITエンジニアの市場価値を知る)
+              dt
+                span.num 12
+                span.text お客様の信頼をつかむドキュメントテクニック講座
+              dd (ビジネス文書とレポーティング)
+              dt
+                span.num 13
+                span.text 即使える基礎ビジネスツール講座
+              dd (ビジネススキルを瞬時に上げる、すぐ使えて実践できるコツ)
+              dt
+                span.num 14
+                span.text 効きたい・わかりやすいプレゼンテーション講座
+              dd (プレゼンテーションとは？コンテンツの作成の流れなど)
+          .row.row03.bg-gray.wrapper
+            .image
+              img(src="../img/company/flow_img03.png", alt="マネジメント研修")
+            .text-desc.text-right ※半期に2回程度実施
+            dl.content-text
+              dt
+                span.num 15
+                span.text 結束力UP講座
+              dd (結束力・信頼力アップのために)
+              dt
+                span.num 16
+                span.text 提案力アップ講座
+              dd (提案とは何か ～ 実際の提案時の話 ～ 実践まで)
+              dt
+                span.num 17
+                span.text 炎上しないスケジューリング講座
+              dd (プロジェクト管理の基本・工程と進捗をマネジメントする)
+              dt
+                span.num 18
+                span.text ファシリテーション講座
+              dd (クリエイティブな会議内容と 進行のノウハウ)
+            .text-desc.text-right ※講義内容は適宜改編

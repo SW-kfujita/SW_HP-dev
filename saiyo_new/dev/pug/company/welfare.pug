@@ -1,0 +1,93 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '福利厚生 | スカイウイルについて | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、福利厚生についてご紹介します。'
+  -keywords     = '福利厚生,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-company-welfare'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/company") スカイウイルについて
+        li
+          span 福利厚生
+          
+    h1.page-title.animated
+      span.line
+      span.title
+        small Welfare
+        strong 福利厚生
+
+    section.section-vacation
+      .wrapper.animated
+        p.lead.text-warning.text-center スカイウィルでは、充実の<br class="sm">福利厚生制度を用意しております。
+      h2.sec-title-general.animated
+        strong 休暇
+        small A vacation
+      .sec-inner.box-gray
+        .wrapper
+          ul.list-welfare
+            li.animated
+              h3.sttl ドナー休暇
+              p.txt 血液難病の治療法への善意の社会貢献のため、社員が近親者以外の骨髄ドナーとなって骨髄液を提供する際、1 回につき通算で10日間を上限に、特別休暇が与えられます。
+            li.animated
+              h3.sttl ボランティア休暇
+              p.txt 社会貢献につながるボランティア活動参加に必要な期間を会社に申請し、承認されれば、特別休暇が与えられます。
+            li.animated
+              h3.sttl マタニティ休暇
+              p.txt 母性保護措置を充実させて、仕事と子育てを両立させるために、妊産婦の社員が悪阻（つわり）による体調不良時に通算で２０日間を上限に特別休暇が与えられます。
+            li.animated
+              h3.sttl 障がい者通院休暇
+              p.txt CSRとダイバーシティ推進のため、障がい者は、通院及び入院のため、指定の医師の意見書に記載された必要な通院回数の特別休暇を取ることができます。
+            li.animated
+              h3.sttl リフレッシュ休暇
+              p.txt 勤続10年となると、表彰状と5万円の旅行券が授与され、3日間の特別休暇を取得できます。
+            li.animated
+              h3.sttl 夏期休暇
+              p.txt 毎年6月1日より9月30日まで（事前に申し出れば、11月30日まで）の期間、３日間の特別休暇を取得できます。
+            li.animated
+              h3.sttl 育児休業
+              p.txt 「自らを育む」ため、留学、資格取得、ボランティア、育児、介護等の理由で、社員が休業できるものです。3 年以内であれば、復職できます。
+            li.animated
+              h3.sttl 育児休業の期間延長
+              p.txt 育児支援のため、法定基準以上の期間休業でき、子が２歳になるまでの間、取得できます。
+
+    section.section-treatment
+      h2.sec-title-general.animated
+        strong 待遇
+        small Treatment
+      .sec-inner.box-gray
+        .wrapper
+          ul.list-welfare
+            li.animated
+              h3.sttl 資格取得支援制度
+              p.txt.md &nbsp;
+              p.txt 各事業部の方針に沿ったITIL, CCNP, LPIC等の資格取得費用（受験料、書籍代）を会社が負担します。会社に図書館アプリもあり、必要な書籍を借りることもできます。
+            li.animated
+              h3.sttl 企業年金（確定拠出 年金）制度
+              p.txt 掛金の積立時、運用時、受取時の税制優遇（所得税、住民税）だけでなく、社会保険料（厚生年金、健康保険、雇用保険等）の負担も軽減できる、最も効率的な長期資産形成方法の一つです。
+            li.animated
+              h3.sttl 遺族年金制度
+              p.txt.md &nbsp;
+              p.txt 社員本人が死亡した場合、法定相続人となる配偶者や子に月額10万円を5年間、計600万円が支給されます。
+            li.animated
+              h3.sttl 第三子出産祝金増額
+              p.txt 子育て支援に積極的で社員が安心して働くことが出来る環境にしていくために、第三子出産時には出産祝金が10万円増額されます。
+            li.animated
+              h3.sttl 社員定例総会
+              p.txt 偶数月には定例会が開催され、終了後に開かれる入社会と言われる懇親会には、会社補助があり、新入社員と誕生月の社員は無料になります。
+            li.animated
+              h3.sttl 優秀社員表彰
+              p.txt 半期に一度、定例会で優秀社員が表彰されます。最優秀社員賞、優秀社員賞、貢献賞等があり、表彰状と副賞が授与されます。
+            li.fill-half.animated
+              h3.sttl 社内企画イベント
+              p.txt 奇数月には、ボウリング、花見、バーベキュー、登山、バスツアー、ハロウィン、ファミリーデー等、四季折々のイベントが会社負担で開催されます。他にも社員有志で、フットサル、野球、バスケットボール、スノーボード、ゲームトーナメント参加等のイベントも開催され、自由に参加できます。
+            li.fill-half.animated
+              h3.sttl 健保組合の全国福利厚生施設
+              p.txt 関東IT健康保険組合に加盟しており、関東甲信越を中心とした直営保養所や全国の契約保養施設、首都圏のスポーツクラブやゴルフ場が安価に利用できます。他にも、東京ディズニーランドチケットを安価に手に入れられたり、格安で一流の寿司屋やカクテルバーが楽しめたりします。

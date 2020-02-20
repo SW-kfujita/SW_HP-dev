@@ -1,0 +1,146 @@
+@charset "utf-8"
+
+
+/* ADDITIONAL RESET
+ * -----------------------------------------------*/
+
+*,
+*:before,
+*:after
+  +box-sizing(border-box)
+
+body *
+  max-height: 99999em
+
+body img
+  max-height: none
+
+
+/* GENERAL
+ * -----------------------------------------------*/
+
+body
+  color: $base-font-color
+  font-family: $base-font-sans
+  font-size: $base-font-size
+  font-weight: $base-font-weight
+  line-height: $base-line-height
+  -webkit-text-size-adjust: none
+  -moz-text-size-adjust: none
+  -ms-text-size-adjust: none
+
+.ft-serif
+  font-family: $base-font-serif
+
+
+/* HELPERS
+ * -----------------------------------------------*/
+
+a
+  color: $base-font-color
+  text-decoration: none
+
+.trans
+  +opacity(1)
+  +transition(opacity .26s ease)
+  &:hover
+    +opacity(0.8)
+
+.hidden
+  display: none
+
+.invisible
+  visibility: hidden
+
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-justify
+  text-align: justify
+  text-justify: distribute
+
+.text-nowrap
+  white-space: nowrap
+
+.text-lowercase
+  text-transform: lowercase
+
+.text-uppercase
+  text-transform: uppercase
+
+.text-capitalize
+  text-transform: capitalize
+
+.clear
+  clear: both
+
+.container
+  min-width: $base-width
+  padding-top: 80px
+  .page-top &
+    padding-top: 0
+
+.wrapper
+  width: 1050px
+  margin-left: auto
+  margin-right: auto
+
+
+/* RESPONSIVE
+ * -----------------------------------------------*/
+
+.sm
+  display: none !important
+
+@media (max-width: $base-sm-break)
+
+  .md
+    display: none !important
+  .sm
+    display: block !important
+
+  .trans,
+  .trans:hover
+    +opacity(1)
+
+  html
+    font-size: 15.625vw
+
+  body
+    font-size: .2rem
+
+  .container
+    width: auto
+    padding-top: .8rem !important
+    min-width: 320px
+
+  .wrapper
+    width: auto
+    margin-left: .2rem
+    margin-right: .2rem
+
+
+/* EFFECTS
+ * -----------------------------------------------*/
+
+.animated,
+.animated-pc
+  visibility: hidden
+
+@media (max-width: $base-sm-break)
+  .animated-pc
+    visibility: visible
+  .animated-sp
+    visibility: hidden
+
+.ie9,
+.ie10
+  .animated,
+  .animated-pc
+    visibility: visible

@@ -1,0 +1,64 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'スカイウィルの仕事 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、仕事・業務内容をご紹介します。'
+  -keywords     = '仕事,業務内容,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-works'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          span スカイウイルの仕事
+    h1.page-title.animated
+      span.line
+      span.title
+        small SkyWill's job
+        strong スカイウイルの仕事
+
+    section.section-works-leading
+      .sec-inner.wrapper
+        h2.title.animated 社員自ら所属する組織を選ぶ
+        .content.animated
+          p 社員全員が「目指すキャリア」や「やりたいこと」を実現できるように会社が様々な支援をします。<br>技術向上を目指す組織、管理職を目指す組織、プライベートを重視する組織、<br>新規事業に取り組む組織に分かれていて、社員それぞれの価値観に合わせて所属し、異動することもできます。
+          p 米国の組織心理学者、エドガー・シャインが提唱した「キャリア・アンカー理論」に基づく、<br>価値観別組織となっています。
+    .section-works-banner.animated
+      .image
+        img.md(src=path+"/img/works/top_banner.jpg", alt="社員自ら所属する組織を選ぶ")
+        img.sm(src=path+"/img/works/sp/top_banner.jpg", alt="社員自ら所属する組織を選ぶ")
+    section.section-works-top
+      .sec-inner.wrapper
+        ul.list-works
+          li.animated
+            .image
+              img(src=path+"/img/works/works_img01.jpg", alt="経営・管理組織 General Managerial")
+            .content
+              h3.title 経営・管理組織
+              .post General Managerial
+              p.desc 管理職を養成する教育カリキュラムが充実していて、将来、経営者にもなれるよう、みな切磋琢磨しています。
+          li.animated
+            .image
+              img(src=path+"/img/works/works_img02.jpg", alt="専門・職能組織 Technical Functional")
+            .content
+              h3.title 専門・職能組織
+              .post Technical Functional
+              p.desc 最新技術を会得し、スキル向上することを最優先し、<br>ハッカソンやハンズオン等、腕試しの場も豊富です。
+          li.animated
+            .image
+              img(src=path+"/img/works/works_img03.jpg", alt="ワークライフバランス組織 Life Style")
+            .content
+              h3.title ワークライフバランス組織
+              .post Life Style
+              p.desc IT未経験でも成長できる教育カリキュラムがあり、育児や介護へは勿論、プライベートを充実させたい人への配慮もしてもらえます。
+          li.animated
+            .image
+              img(src=path+"/img/works/works_img04.jpg", alt="起業・創造組織 Entrepreneurial Creativity")
+            .content
+              h3.title 起業・創造組織
+              .post Entrepreneurial Creativity
+              p.desc 自社ブランドアプリ、ECサイト等のリリースを目指す開発部隊。他にも新しいサービスの開発を手掛けています。

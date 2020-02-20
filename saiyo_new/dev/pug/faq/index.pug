@@ -1,0 +1,90 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'よくあるご質問 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、よくあるご質問をご紹介します。'
+  -keywords     = '質問,faq,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-faq'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          span よくあるご質問
+          
+    h1.page-title.animated
+      span.line
+      span.title
+        small FAQ
+        strong よくあるご質問
+    
+    section.section-faq-leading.animated
+      .sec-inner.wrapper
+        p 採用や勤務に関して皆様から寄せられる質問の中から、<br>頻度の高いものを抜粋して回答と共に掲載しています。
+
+    section.section-faq-top
+      .sec-inner.wrapper
+        h2.sec-title-general.animated
+          strong よくいただくご質問
+          small Frequently asked questions
+        ul.list-faq
+          li.animated
+            h3.title どのような人材を求めているのか教えてください。
+            .content スカイウイルは、多様性を重要視しておりますので、様々な経験や能力を保有している方にご応募頂きたいと考えております。 元気で、明るく、向上心のある方等歓迎です。
+          li.animated
+            h3.title 選考の期間は、どのくらいになりますか？
+            .content 時期により異なりますが、基本的に書類選考1週間以内、面接と場合によっては、筆記試験を行いますので、更に１～2週間程度かかる可能性が御座います。 期間が延びたり、縮まったりすることもあると思いますので、あらかじめ、ご了承の程、宜しくお願い申し上げます。 選考の期間が、重要な際には、事前にその趣旨をお伝え頂けますと、スムーズに進めることが可能です。
+          li.animated
+            h3.title 選考の期間は、どのくらいになりますか？
+            .content 時期により異なりますが、基本的に書類選考1週間以内、面接と場合によっては、筆記試験を行いますので、更に１～2週間程度かかる可能性が御座います。 期間が延びたり、縮まったりすることもあると思いますので、あらかじめ、ご了承の程、宜しくお願い申し上げます。 選考の期間が、重要な際には、事前にその趣旨をお伝え頂けますと、スムーズに進めることが可能です。
+
+    section.section-faq-top
+      .sec-inner.wrapper
+        h2.sec-title-general.animated
+          strong 採用に関するご質問と回答
+          small Questions and answers about recruitment
+        ul.list-faq
+            li.animated
+              h3.title 入社前に、人事制度や、就業規則等を教えてもらうことは、可能ですか。
+              .content 面談の時にご相談下さい。基本的に、文書をベースにすべてご説明したいと考えております。
+            li.animated
+              h3.title 文系出身でも技術社員として採用してもらえますか？
+              .content 技術社員として採用します。技術者を目指してください。
+            li.animated
+              h3.title どのような人材を求めているのか教えてください。
+              .content スカイウイルは、多様性を重要視しておりますので、様々な経験や能力を保有している方にご応募頂きたいと考えております。 元気で、明るく、向上心のある方等歓迎です。
+            li.animated
+              h3.title 東京以外での採用はありますか？
+              .content 東京本社の採用が中心です。
+            li.animated
+              h3.title ホームページに掲載されている以外の募集職種はありますか？
+              .content 募集職種は全てこの採用情報に掲載し、追加・変更・更新をしています。
+            li.animated
+              h3.title 選考の期間は、どのくらいになりますか？
+              .content 時期により異なりますが、基本的に書類選考1週間以内、面接と場合によっては、筆記試験を行いますので、更に１～2週間程度かかる可能性が御座います。 期間が延びたり、縮まったりすることもあると思いますので、あらかじめ、ご了承の程、宜しくお願い申し上げます。 選考の期間が、重要な際には、事前にその趣旨をお伝え頂けますと、スムーズに進めることが可能です。
+            li.animated
+              h3.title 会社見学は受け付けていますか？
+              .content もちろん歓迎しています。 会社見学希望される場合は、当社採用担当までe-Mailかお電話にて事前にご連絡ください。
+            li.animated
+              h3.title 過去に応募したことがあるのですが、再度の応募は可能ですか？
+              .content 可能です。ご応募お待ちいたしております。
+            li.animated
+              h3.title 年齢や学歴での応募制限はありますか？
+              .content 当社では年齢や学歴の制限はございません。
+            li.animated
+              h3.title 入社までに必要な資格などありますか？
+              .content 特にございません。 積極的に資格を取得される姿勢をプラス評価するケースはあっても、取得されていない事をマイナス評価するような事はありません。また、入社後、職務を遂行するうえで資格の取得が望ましいと考えられる場合には、弊社としましても積極的に支援をしていきます。
+
+    section.section-faq-top
+      .sec-inner.wrapper
+        h2.sec-title-general.animated
+          strong 仕事に関するご質問
+          small Questions and answers about works
+        ul.list-faq
+          li.animated
+            h3.title 給与の決定は、どのように行われますか？
+            .content 半期に一度考課面談を行い、給与を決めます。その際には、①達成・成果、②価値観・意識・行動姿勢、③顧客満足の３つの視点より業績を評価し、給与や昇給に反映させます。

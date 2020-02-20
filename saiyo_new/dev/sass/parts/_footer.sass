@@ -1,0 +1,191 @@
+@charset "utf-8"
+
+
+/* COMMON FOOTER
+ * -----------------------------------------------*/
+
+footer
+  background-color: #222
+  overflow: hidden
+  .footer-innner
+    +clearfix
+    padding: 10px 6.25%
+    .footer-content
+      float: left
+      padding: 27px 0
+      .footer-logo
+        img
+          display: block
+    .footer-sns
+      float: right
+      padding: 27px 0 22px
+      ul.list-sns
+        -js-display: flex
+        +display-flex
+        li
+          -js-display: flex
+          +display-flex
+          +align-items(center)
+          width: 55px
+          height: 55px
+          margin-left: 20px
+          &:first-child
+            margin-left: 0
+          a
+            @extend .trans
+            display: block
+            img
+              display: block
+  .btn-top
+    width: 65px
+    height: 65px
+    background: url(../img/common/btn_top.png) 0 0 no-repeat
+    position: fixed
+    right: 20px
+    bottom: 20px
+    z-index: 10000
+    cursor: pointer
+
+.footer-link
+  -js-display: flex
+  +display-flex
+  +justify-content(space-between)
+  +flex-wrap(wrap)
+  margin-top: 30px
+  position: relative
+  a
+    color: white
+  .group-menu
+    >ul
+      margin-bottom: 35px
+      >li
+        padding-left: 30px
+        overflow: hidden
+        background: url(../img/common/arrow_right.png) no-repeat 0 8px
+        >a
+          display: table
+          font-size: 16px
+          font-weight: bold
+          margin-bottom: 15px
+    .submenu
+      float: left
+      &+.submenu
+        margin-left: 40px
+      li
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+
+.footer-copyright
+  margin-top: 20px
+  padding: 5px 0
+  color: #fff
+  line-height: 1
+
+@media (min-width: $base-sm-break + 1)
+  .footer-link
+    .group-menu .submenu
+      display: block !important
+    .toggle
+      display: none !important
+@media (min-width: 768px) and (max-width: 1280px)
+  .footer-link .group-menu
+    width: 50%
+
+@media (max-width: $base-sm-break)
+
+  footer
+    .footer-innner
+      padding: .3rem .2rem 0.15rem
+      .footer-content
+        float: none
+        padding: 0
+        .footer-logo
+          width: 4.3rem
+          margin: 0 auto
+          img
+            width: 100%
+      .footer-sns
+        float: none
+        padding: 0 0 .5rem
+        ul.list-sns
+          +display-flex
+          +align-items(center)
+          +justify-content(center)
+          width: 100%
+          li
+            display: block
+            width: .8rem
+            height: .8rem
+            margin: 0 .175rem
+            a
+              img
+                width: 100%
+    .btn-top
+      width: .8rem
+      height: .8rem
+      background: url(../img/common/sp/btn_top.png)
+      background-size: 100% auto
+      right: .2rem
+      bottom: .2rem
+
+    .footer-copyright
+      margin-top: 0.15rem
+      font-size: .2rem
+      text-align: center
+
+    .footer-link
+      display: block
+      margin-left: -0.2rem
+      margin-right: -0.2rem
+      margin-top: 0.45rem
+      border-top: 1px solid rgba(255,255,255, 0.3)
+      .group-menu
+        >ul
+          margin-bottom: 0
+          >li
+            position: relative
+            border-bottom: 1px solid rgba(255,255,255,.3)
+            >a
+              display: block
+              margin: 0
+              font-size: 0.22rem
+        li
+          padding: 0 0.2rem
+          background: none
+          a:not(.toggle)
+            padding: 0.245rem 0 0.245rem 0.45rem
+            background: url(../img/common/sp/arrow_right.png) no-repeat 0 center
+            +background-size(0.22rem auto)
+        .submenu
+          float: none
+          display: none
+          margin: 0 -0.2rem !important
+          li
+            margin: 0
+            padding: 0 0.2rem
+            background: #fff
+            border-bottom: 1px solid rgba(0,0,0,.3)
+          &:last-child li:last-child
+            border-bottom: 0
+          a
+            display: block
+            color: #000
+            font-size: 0.2rem
+            background-image: url(../img/common/sp/icon20.png) !important
+
+      .toggle
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 99
+        background: url(../img/common/sp/icon_plus.png) no-repeat center center
+        +background-size(0.31rem auto)
+        width: 0
+        text-indent: -99px
+        overflow: hidden
+        padding: 0.245rem 0.445rem
+        border-left: 1px solid rgba(255,255,255,.3)
+        &.open
+          background-image: url(../img/common/sp/icon_minus.png)

@@ -1,0 +1,119 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'スカイウィルが求めている人／向かない人 | メッセージ | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、スカイウィルが求めている人・向かない人をご紹介します。'
+  -keywords     = '求める人材,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-message-person'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/message") メッセージ
+        li
+          span スカイウイルが求めている人／向かない人
+          
+    h1.page-title.animated
+      span.line
+      span.title
+        small People who seek
+        strong スカイウイルが求めている人／向かない人
+
+    section.section-person-seeking
+      h2.sec-title-general.animated
+        strong スカイウイルが求める人物像
+        small The person seeking
+      .sec-inner.box-gray
+        .wrapper
+          .block-person
+            .text-intro.text-center.animated
+              p スカイウイルが求める理想的な人物像は、弊社の企業理念・価値観に合致する方です。<br>以下、いずれかに該当する方は、活躍の場がありますので、ぜひご応募ください。
+            ul.list-features
+              li.animated
+                figure
+                  img(src="../img/message/icon_fire.png", alt="困難にもあきらめない")
+                | 困難にもあきらめない
+              li.animated
+                figure
+                  img(src="../img/message/icon_fire.png", alt="プロ意識がある")
+                | 誠実であり、相手を尊重できる
+              li.animated
+                figure
+                  img(src="../img/message/icon_fire.png", alt="誠実であり、相手を尊重できる")
+                | 自立している
+            ul.list-features
+              li.animated
+                figure
+                  img(src="../img/message/icon_fire.png", alt="学習し続けられる")
+                | プロ意識がある
+              li.animated
+                figure
+                  img(src="../img/message/icon_fire.png", alt="自立している")
+                | 学習し続けられる
+              li.animated
+                figure
+                  img(src="../img/message/icon_fire.png", alt="フットワークが軽い")
+                | フットワークが軽い
+
+    section.section-prompt-person
+      h2.sec-title-general.animated
+        strong スカイウイルに向かない人物像
+        small Not prompted person
+      .sec-inner.box-gray
+        .wrapper
+          .block-person
+            .text-intro.text-center.animated
+              p スカイウイルでは、様々な価値観の社員が楽しく働くことが出来るような環境作りに配慮しています。<br class="md">ただ、以下のような方が、永く活躍することは、難しいかもしれません。
+            ul.list-features
+              li.animated
+                figure
+                  img(src="../img/message/icon_water.png", alt="自己中心的")
+                | 自己中心的
+              li.animated
+                figure
+                  img(src="../img/message/icon_water.png", alt="何でもすぐに飽きて続かない")
+                | コミュニケーションが極度に苦手
+              li.animated
+                figure
+                  img(src="../img/message/icon_water.png", alt="コミュニケーションが極度に苦手")
+                | 勉強はしない
+            ul.list-features
+              li.animated
+                figure
+                  img(src="../img/message/icon_water.png", alt="会社や上司のせいでうまくいかないと思う")
+                | 何でもすぐに飽きて続かない
+              li.animated
+                figure
+                  img(src="../img/message/icon_water.png", alt="勉強はしない")
+                | 会社や上司のせいでうまくいかないと思う
+              li.animated
+                figure
+                  img(src="../img/message/icon_water.png", alt="体調管理ができない")
+                | 体調管理ができない
+
+    section.section-person-idea
+      h2.sec-title-general.animated
+        strong スカイウイルが求める理想的な人物
+        small Not prompted person
+      .sec-inner
+        .wrapper
+          .text-intro.text-center.animated
+            p スカイウイルが求める人物としては、理想的には、下記のようなことがあります。<br>いずれかに該当する方とは、是非、お会いしたいと考えております。また、現在そうでなくとも、未来において、そのような人物になる気持ちのある方も、大歓迎ですので、遠慮なくご連絡いただければと考えております。
+            p このような方は、ぜひご応募ください。
+          ul.list-idea
+            li.animated 弊社の企業理念・価値観に合致する方、また共感できる方
+            li.animated ビジネスでリーダーシップを発揮し、主体的に行動できる方
+            li.animated プロフェッショナル意識を持ち、チームの勝利に貢献できる方
+            li.animated 技術に関して強い自信があり、どのような問題でも粘り強く解決できる方
+            li.animated 顧客サービスということに関して、他の人の見本になれる自信のある方
+            li.animated 市場・環境の変化を敏感に感じ、自身もそれに合わせ、スピーディに変化できる方
+            li.animated 高いアンテナ（様々な情報網）を持ち、人脈を大切にしている方
+            li.animated 新しいビジネスを企画、開発、運営する能力のある方、また、その準備をしている方
+            li.animated 困難な状況でもあきらめず、勇気を持って挑戦できる方
+            li.animated 体が健康で、明るく、元気で、向上心のある方
+

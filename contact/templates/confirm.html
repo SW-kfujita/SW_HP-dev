@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="株式会社スカイウイルへのお問い合わせページです。皆様からのお問い合わせやご意見、ご質問をおまちしております。">
+    <meta name="keywords" content="お問い合わせ,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill">
+    <title>確認 | お問い合わせ／アンケート | 株式会社スカイウイル - クラウド構築、アプリケーション開発、テクニカルサポート、ITコンサルティング</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:600,700&amp;amp;subset=greek,latin-ext">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8270313-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body class="page-contact">
+    <div class="container">
+      <header>
+        <div class="clearfix">
+          <div class="left-header">
+            <h1 class="logo"><a class="trans" href="../"><img class="md" src="../img/logo.png" alt="skywill"><img class="sm" src="../img/logo-sm.png" alt="skywill"></a></h1>
+            <div class="slogan md">株式会社スカイウイルは.お客様の<br />未来を支え社会に貢献し続けます</div>
+          </div>
+          <div class="button-menu" id="button-menu"><img src="../img/icon-menu.jpg" alt="button menu"></div>
+          <div class="right-header">
+            <div class="cover clearfix">
+              <div class="btn-close sm" id="btn-close"><img src="../img/icon-close.png" alt="close"></div>
+              <ul class="main-nav clearfix">
+                <li><a class="trans" href="../service/">サービス</a></li>
+                <li><a class="trans" href="../advantage/">スカイウイルの強み</a></li>
+                <li><a class="trans" href="../company/">会社情報</a></li>
+                <li><a class="trans" href="http://saiyo.skywill.jp/" target="_blank">採用情報</a></li>
+              </ul>
+              <div class="phone" id="phone-header"><a href="tel:03-5419-4419"><span class="number ft-advent">03-5419-4419</span><span class="jp">受付時間 平日9:30~18:00</span></a></div><a class="contact" id="contact-header" href="../contact/">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="banner-cmn no-bg">
+        <div class="wrapper">
+          <h2 class="ttl-banner two-line"><span class="ft-advent en">Inq<span></span>uiry / q<span></span>uestionnaire</span><span class="jp">お問い合わせ／アンケート</span></h2>
+        </div>
+      </section>
+      <div class="main-contact">
+        <div class="wrapper">
+          <div class="nav-step clearfix">
+            <div class="block-step">STEP1 <br>必要情報入力</div>
+            <div class="block-step act">STEP2 <br>入力内容確認</div>
+            <div class="block-step">STEP3 <br>送信完了</div>
+          </div>
+          <div class="form-contact">
+            <p class="txt-check">ご入力いただいた内容は下記でお間違いない場合、<br>「送信する」ボタンを押してください</p>
+            <form class="main-form check-form" action="complete.php" method="POST">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>名前</th>
+                    <td><?php echo $args['kanji-01']; ?>　<?php echo $args['kanji-02']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>名前（フリガナ）</th>
+                    <td><?php echo $args['kana-01']; ?>　<?php echo $args['kana-02']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>会社名</th>
+                    <td><?php echo $args['company']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>部署名</th>
+                    <td><?php echo $args['dept']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>役職名</th>
+                    <td><?php echo $args['role']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>電話番号</th>
+                    <td><?php echo $args['tel']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>e-Mail</th>
+                    <td><?php echo $args['email']; ?></td>
+                  </tr>
+                  <tr>
+                    <th>お問い合わせ内容</th>
+                    <td><?php echo nl2br($args['message']); ?></td>
+                  </tr>
+                  <tr>
+                    <th>どのようにして<br class="md">当社のサービスを<br class="md">お知りになりましたか？</th>
+                    <td>
+                      <?php echo implode(', ', $args['howyouknow']); ?>
+                      <?php if(!empty($args['howyouknow']) && in_array('その他', $args['howyouknow'])) echo ': '.$args['howyouknow_other']; ?>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="btn-confirm">
+                <p>内容をご確認のうえ、「確認する」ボタンをクリックしてください。</p>
+
+                
+                <?php foreach($args as $key => $value): ?>
+                    <?php if(is_array($value)): foreach($value as $v): ?>
+                        <input type="hidden" name="<?php echo $key; ?>[]" value="<?php echo $v; ?>"/>
+                    <?php endforeach; else: ?>
+                        <input type="hidden" name="<?php echo $key; ?>" value="<?php echo $value; ?>"/>
+                <?php endif; endforeach; ?>
+                
+                <div class="gr-btn">
+                <!--<a class="trans back-screen" onclick="this.form.action='index.php'">入力画面に戻る</a>-->
+                  <input class="trans back-screen" type="submit" value="入力画面に戻る" onclick="this.form.action='index.php'"/>
+                <!--<div class="gr-btn"><a class="trans back-screen" href="../contact/">入力画面に戻る</a> -->
+                  <input class="wpcf7-form-control wpcf7-confirm wpcf7c-elm-step1 wpcf7c-btn-confirm" type="submit" value="送信する">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrunb md">
+        <div class="wrapper">
+          <ul>
+            <li><a href="../">TOP</a></li>
+            <li><img src="../img/icon-breadcrumb.png" alt="お問い合わせ／アンケート"></li>
+            <li><span>お問い合わせ／アンケート</span></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <div class="go-to-top" id="btn-go-top"><img src="../img/icon-top.jpg" alt="icon"></div>
+        <div class="block-call">
+          <div class="wrapper">
+            <div class="text-top">案件のご相談・スカイウイルに関する<br class="sm">お問い合わせはこちらから</div>
+            <div class="text-center clearfix"><a class="box-inner link has-animation-fi" href="../contact/">WEBからのお問い合わせ</a>
+              <div class="box-inner text has-animation-fi md">
+                <div class="text-phone">お電話でのお問い合わせ</div>
+                <div class="number ft-advent">03-5419-4419</div>
+                <div class="time">受付時間：平日9:30~18:00</div>
+              </div><a class="box-inner text has-animation-fi sm" href="tel:03-5419-4419">
+                <div class="text-phone">お電話でのお問い合わせ</div>
+                <div class="number ft-advent">03-5419-4419</div>
+                <div class="time">受付時間：平日9:30~18:00</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-sns">
+          <div class="wrapper">
+            <ul class="list-sns">
+              <li><a href="https://www.wantedly.com/companies/skywill" target="_blank"><img src="../img/footer_sns_ico01.png" alt="Wantedly"></a></li>
+              <li><a href="https://www.linkedin.com/company/13615261/" target="_blank"><img src="../img/footer_sns_ico02.png" alt="LinkedIn"></a></li>
+              <li><a href="http://www.sw-mono.blog/" target="_blank"><img src="../img/footer_sns_ico03.png" alt="Blog"></a></li>
+              <li><a href="https://www.facebook.com/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%A6%E3%82%A4%E3%83%AB-Skywill-inc-489541764444282/" target="_blank"><img src="../img/footer_sns_ico04.png" alt="Facebook"></a></li>
+              <li><a href="https://twitter.com/Skywill_inc" target="_blank"><img src="../img/footer_sns_ico05.png" alt="Twitter"></a></li>
+              <li><a href="https://www.instagram.com/skywill.inc/" target="_blank"><img src="../img/footer_sns_ico06.png" alt="Instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav-footer">
+          <ul>
+            <li class="has-animation-fi"><a class="trans" href="../faq/">よくあるご質問</a></li>
+            <li class="middel has-animation-fi"><a class="trans" href="../privacy/">プライバシーポリシー</a></li>
+            <li class="has-animation-fi"><a class="trans" href="../sitemap/">サイトマップ</a></li>
+          </ul>
+        </div>
+        <div class="icon-ft has-animation-fi"><a class="trans ic-ft" href="#"><img class="md" src="../img/icon-footer01.png" alt="icon"><img class="sm" src="../img/icon-footer01-sm.jpg" alt="icon"></a><a class="trans ic-ft" href="#"><img class="md" src="../img/icon-footer02.png" alt="icon"><img class="sm" src="../img/icon-footer02-sm.jpg" alt="icon"></a></div>
+        <div class="coppy-right">Copyright © Skywill inc. All Rights Reserved.</div>
+      </footer>
+    </div>
+    <script src="../js/libs.js"></script>
+    <script src="../js/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../js/main/main_out.js"></script>
+    <script src="../js/main/main_out2.js"></script>
+    <script src="../js/jquery.matchHeight.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/modernizr.js"></script>
+  </body>
+</html>

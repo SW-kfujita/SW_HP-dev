@@ -1,0 +1,96 @@
+@charset "utf-8"
+
+
+/* SECTION INFO
+ * -----------------------------------------------*/
+
+.section-info
+
+  padding: 0 0 100px
+
+  .menu
+    -js-display: flex
+    +display-flex
+    +justify-content(center)
+    margin-bottom: 55px
+    .btn
+      display: block
+      width: 270px
+      height: 70px
+      border: 3px solid #d6d6d6
+      padding: 22px 0
+      margin: 0 5px
+      +border-radius(35px)
+      font-size: 18px
+      font-weight: bold
+      line-height: 1
+      text-align: center
+      +transition(border-color .26s ease)
+      &.active
+        border-color: #d52a3c
+      .ie &
+        padding-top: 25px
+
+  table.table-info
+    width: 100%
+    tr
+      th
+        width: 350px
+        padding: 15px 20px
+        background: #5a5a5e
+        border-bottom: 1px solid #fff
+        text-align: center
+        vertical-align: middle
+        color: #fff
+        font-size: 16px
+        font-weight: bold
+        line-height: 1.8
+      td
+        padding: 15px 20px
+        background: #f4f4f1
+        border-bottom: 1px solid #fff
+        font-size: 16px
+        line-height: 1.8
+
+  .button
+    margin-top: 50px
+    .btn-entry
+      margin: 0 auto
+
+  .content-info
+    .tab-content
+      display: none
+      &.active
+        display: block
+
+@media (max-width: $base-sm-break)
+
+  .section-info
+
+    padding: 0 0 1rem
+
+    .menu
+      margin-bottom: .55rem
+      .btn
+        width: 2.68rem
+        height: .67rem
+        border-width: .03rem
+        padding: .2rem 0
+        margin: 0 .05rem
+        +border-radius(.35rem)
+        font-size: .2rem
+
+    table.table-info
+      width: auto
+      margin: 0 -.2rem
+      tr
+        th
+          width: 1.75rem
+          padding: .15rem .1rem
+          font-size: .18rem
+        td
+          padding: .15rem .1rem .15rem .3rem
+          font-size: .2rem
+
+    .button
+      margin-top: .65rem

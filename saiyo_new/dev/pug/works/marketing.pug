@@ -1,0 +1,71 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'マーケティングサービス | スカイウィルの仕事 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、マーケティングサービスをご紹介します。'
+  -keywords     = 'マーケティングサービス,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-works-cloud'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/works") スカイウイルの仕事
+        li
+          span マーケティングサービス
+
+    h1.page-title.animated
+      span.line
+      span.title
+        small MARKETING
+        strong マーケティングサービス
+
+    section.section-works-cloud
+      .heading.animated
+        p.desc 「市場シェア」より「顧客シェア」。<br>CRM視点で結果を意識した”お客さま視点”のマーケティングサービスを提供します！
+        img.banner.md(src=path+"/img/works/cloud_banner.jpg", alt="マーケティングサービス")
+        img.banner.sm(src=path+"/img/works/sp/cloud_banner.jpg", alt="マーケティングサービス")
+      .article.bg-gray.animated
+        .wrapper
+          h2.sec-title-general
+            strong サービス概要
+            small Service overview
+          .content
+            p IT普及による競合参入障壁の崩壊、競合との競争激化、収益率の低下等、マーケットシェアを 追い求める経営戦略では立ち行かなくなっている現在、「顧客シェア（顧客との関係構築・維持）」 の重要性が見直されています。<br>
+              | スカイウイルでは、「お客さまの納得・満足」や「結果を出す」ことにこだわり、企業と顧客が接するすべてのシーンにおけるコミュニケーションを設計・構築・運用・管理していきます。
+      .article.animated
+        .wrapper
+          h2.sec-title-general
+            strong お客さま視点のマーケティング／コミュニケーションを<br class="md" >実践する<br class="sm">専門家を目指しています！
+            small Technological capabilities and responsiveness
+          .content
+            p 新商品や新サービスなど企業が生み出す価値を、どのようなコミュニケーションで お客さまに受け入れてもらい、顧客獲得・顧客維持を実現するか？ 各種データ分析を基に、「結果を出す」ことを強く意識して、お客さまの各ステージ／各お客さま接点におけるコミュニケーションの在り方を考え、実践していきます。<br>
+              | サービス提供領域は大きく2つあります。新規顧客をいかに効率的・効果的に獲得していくことをテーマとした「アクイジション領域」と、お客さまを維持・育成してロイヤル顧客化していく「リテンション領域」。<br>
+              | これら2つの領域で、コンサルティングなどの上流業務～実行・評価までワンストップのマーケティングサービス（コンサル、サイト制作、システム開発、効果検証など）を提供しています。
+      .article.bg-gray.animated
+        .wrapper
+          h2.sec-title-general
+            strong クライアント企業様の立場に立った品質の高い<br class="md">マーケティングサービスの提供を強く意識しています！
+            small Speedy and accurate
+          .content
+            p 様々なクライアント企業様からのお仕事を、こなせばいい業務や作業として受け取らず、クライアント企業様の立場に立って、結果を生み出すために深く考え、抜け目なく準備し、確実に実行する「品質の高いマーケティングサービスの提供」を心がけております。<br>
+              | これにより、様々なクライアント企業様のマーケティングパートナーとして、中長期的な関係を維持・発展させていける様、スタッフ一人ひとりが自分の持てる力を全て注ぎ込んでいます。<br>
+              | 充実感と達成感が持てる仕事ができる環境です。
+      .article.animated
+        .wrapper
+          h2.sec-title-general
+            strong 高品質なマーケティングサービス提供のために、<br class="md">努力を惜しまない人材を求めています！
+            small Hope for those with intellectual amenity
+          .content
+            p.lead 少しでも当てはまる方、ぜひスカイウイルにご応募
+            p 高品質で満足してもらえる仕事をできる様、自分を高める／業務対応レベルを高めることに貪欲な好奇心旺盛で積極的な人材を求めています。<br>
+              | 【求める人材像】<br>
+              | 知識習得、経験蓄積に積極的で努力を惜しまない<br>
+              | 市場や業界動向への感度を高く持っている<br>
+              | 様々な人とのコミュニケーションや関係づくりに積極的な方
+          .button.animated
+            a.btn-entry(href="#") エントリーはこちらから

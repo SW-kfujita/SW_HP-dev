@@ -1,0 +1,70 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'テクニカルサポート | スカイウィルの仕事 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、テクニカルサポートをご紹介します。'
+  -keywords     = 'テクニカルサポート,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-works-cloud'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/works") スカイウイルの仕事
+        li
+          span テクニカルサポート
+
+    h1.page-title.animated
+      span.line
+      span.title
+        small TECHNICAL SUPPORT
+        strong テクニカルサポート
+
+    section.section-works-cloud
+      .heading.animated
+        p.desc 1 ＋ 1 ＝ 3 以上！？<br />チームで業務を行うことによる相乗効果
+        img.banner.md(src=path+"/img/works/cloud_banner.jpg", alt="テクニカルサポート")
+        img.banner.sm(src=path+"/img/works/sp/cloud_banner.jpg", alt="テクニカルサポート")
+      .article.bg-gray.animated
+        .wrapper
+          h2.sec-title-general
+            strong サービス概要
+            small Service overview
+          .content
+            p 各種サーバ、ネットワークの保守や運用監視、サポートデスク、ヘルプデスク等、いわゆる「システム運用」をメインに対応しております。<br>
+              | システム設計構築やヘルプデスク経験豊富なメンバーが多数在籍しており、運用開始前のルール作成や、リスクマネジメント、コミュニケーションルール、エスカレーションフローの改善提案等、「システム運用」における一連の業務をワンストップで対応しております。<br>
+              | 技術力はもちろんのことですが、コミュニケーション力やビジネスマインド、ヒューマンスキル等の育成にも力を入れております。様々な組織と密接にかかわる運営においては、正しい情報を正しい情報経路で正しい関係者に報・連・相をすることの重要性を強調しております。
+      .article.animated
+        .wrapper
+          h2.sec-title-general
+            strong 体制参画によるお客様工数の削減と安心感の提供
+            small Technological capabilities and responsiveness
+          .content
+            p お客様サービスのシステム部分をサポートしておりますが、どのような業務においても泥臭い部分や時間のかかる業務はつきものです。<br>
+              | スカイウイルでは、業務工数や教育等を含めた「管理者」を配置し、適正にあわせたマネジメントを行いながら、業務効率化やお客様工数の削減等を実現しております。<br>
+              | そうした取り組みによって、高い品質を維持し、お客様からの信頼を頂いております。
+      .article.bg-gray.animated
+        .wrapper
+          h2.sec-title-general
+            strong コミュニケーション力と提案力。主体性を持って取り組む意識
+            small Speedy and accurate
+          .content
+            p IT業界においては技術だけに特化した人材も多く存在していますが、特に運用分野においてお客様が求めるのは、その技術力を最大限発揮することがで きるための「コミュニケーション能力」です。<br>
+              | 現実的な問題としてお客様の言いたい事を正確に把握し、その内容に沿った提案を行うことができるエンジニアは 残念ながらそれほど多くありません。<br>
+              | そういった中で、スカイウイルにおいては定期的な社内教育や外部セミナーを通じ、コミュニケーション能力向上や提案力 向上に取り組んでおります。
+      .article.animated
+        .wrapper
+          h2.sec-title-general
+            strong 明るく元気でコミュニケーション力がある方
+            small Hope for those with intellectual amenity
+          .content
+            p.lead 少しでも当てはまる方、ぜひスカイウイルにご応募
+            p 営業力/提案力がある。またはその素養ややる気がある方<br>
+              | 技術力を積極的に学び、自身の価値向上に努めることが出来る方<br>
+              | マネジメントやリーダー業務経験がある。またはその素養ややる気がある方
+          .button.animated
+            a.btn-entry(href="#") エントリーはこちらから

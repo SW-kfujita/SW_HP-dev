@@ -1,0 +1,77 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'スカイウィルの活躍 | スカイウィルの仕事 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、スカイウィルの活躍をご紹介します。'
+  -keywords     = '活躍,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-works-active'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/works") スカイウイルの仕事
+        li
+          span スカイウイルの活躍
+
+    h1.page-title.animated
+      span.line
+      span.title
+        small Activities of SkyWill
+        strong スカイウイルの活躍
+
+    section.section-works-active
+      .sec-inner.wrapper
+        .heading.animated
+          p 創業より、インフラ構築、運用・保守において、大手企業等のお客様より評価を頂き、<br>増収と連続黒字を続けて参りました。その後、クラウド、アプリケーション開発にも得意分野を広げ、<br>現在、AI・IoT分野にも注力しております。
+
+        ul.list-works
+          li.animated
+            .image
+              img(src=path+"/img/works/active_img01.jpg", alt="成長分野へ力を入れる Growth")
+            .content
+              h2.title 成長分野へ力を入れる
+              .post Growth
+              p.desc AI、ビッグデータ、IoT、クラウド分野へ注力<br>アプリ開発やインフラ構築・運用・保守に強い<br>ITエンジニア150名在籍
+
+          li.animated
+            .image
+              img(src=path+"/img/works/active_img02.jpg", alt="堅実で安定した経営基盤 Stable management")
+            .content
+              h2.title 堅実で安定した経営基盤
+              .post Stable management
+              p.desc 15年連続売上増、黒字<br>無借金経営
+
+          li.animated
+            .image
+              img(src=path+"/img/works/active_img03.jpg", alt="キャリアアップを大切にする社風 Career enhancement")
+            .content
+              h2.title キャリアアップを大切にする社風
+              .post Career enhancement
+              p.desc やりたい仕事ができるように支援する<br>社員の成長を重視し、教育や資格取得に投資する<br>ワークライフバランスを保てるよう配慮できる
+
+          li.animated
+            .image
+              img(src=path+"/img/works/active_img04.jpg", alt="取引先は大手企業中心 Suppliers")
+            .content
+              h2.title 取引先は大手企業中心
+              .post Suppliers
+              p.desc NEC、NTT、パナソニック、富士通等
+          li.animated
+            .image
+              img(src=path+"/img/works/active_img05.jpg", alt="体制化された現場組織 Organization")
+            .content
+              h2.title 体制化された現場組織
+              .post Organization
+              p.desc 現場リーダを置き、当社社員同士でフォローできる体制
+          li.animated
+            .image
+              img(src=path+"/img/works/active_img06.jpg", alt="人間関係が良好 Human relations")
+            .content
+              h2.title 人間関係が良好
+              .post Human relations
+              p.desc 社内イベントが盛ん<br>プライベートでも社員同士、仲が良い

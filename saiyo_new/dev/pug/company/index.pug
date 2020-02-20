@@ -1,0 +1,92 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'スカイウイルについて | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、会社についてご紹介します。'
+  -keywords     = '会社紹介,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-company'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          span 数字から見るスカイウイル
+
+    h1.page-title.animated
+      span.line
+      span.title
+        small SkyWill seen from numbers
+        strong 数字から見るスカイウイル
+
+    div.section-company-about
+      p.description.animated スカイウイルの気になることを、数字で分かりやすく表現しました。
+      h2.sec-title-general.animated
+        strong 会社について
+        small About company
+      .sec-inner.wrapper
+        .about-company
+          .row.col-md-3
+            .box.animated
+              .item.bg01
+                img(src="../img/company/about01.png", alt="有利子負債 無借金経営です。")
+              .item.bg02
+                img(src="../img/company/about02.png", alt="売上高伸長率")
+            .box.animated
+              .item.bg03
+                img(src="../img/company/about03.png", alt="連続売上増")
+            .box.animated
+              .item.bg02
+                img(src="../img/company/about04.png", alt="連続黒字")
+          .row.col-md-2
+            .box.animated
+              .item.bg01
+                img(src="../img/company/about05.png", alt="年齢比率")
+            .box.animated
+              .item.bg03
+                img(src="../img/company/about06.png", alt="文系出身？理系出身？")
+          .row.col-md-x
+            .box.box01.animated
+              .item.bg03
+                img(src="../img/company/about07.png", alt="年間イベント数")
+            .box.box02.animated
+              .item.bg02
+                img(src="../img/company/about08.png", alt="創業年数")
+            .box.box02.animated
+              .item.bg01
+                img(src="../img/company/about09.png", alt="婚姻比率")
+    div.section-company-questionnaire
+      h2.sec-title-general.animated
+        strong アンケート
+        small Questionnaire
+      .sec-inner.wrapper
+        .list-questionare
+          .item.animated
+            img(src="../img/company/questionare01.png", alt="今いる職場の居心地は良いですか？")
+          .item.animated
+            img(src="../img/company/questionare02.png", alt="まわりの人たちと良い関係を築けていますか？")
+          .item.animated
+            img(src="../img/company/questionare03.png", alt="スカイウイルに入社して、成長できたと感じますか？")
+          .item.animated
+            img(src="../img/company/questionare04.png", alt="仕事に対する手ごたえや達成感を感じていますか？")
+          .item.animated
+            img(src="../img/company/questionare05.png", alt="自分の能力や専門性を高められていると感じますか？")
+          .item.animated
+            img(src="../img/company/questionare06.png", alt="自分の能力や専門性を高められていると感じますか？")
+          .item.animated
+            img(src="../img/company/questionare07.png", alt="出身地はどこですか？")
+          .item.animated
+            img(src="../img/company/questionare08.png", alt="あなたは何派？")
+          .item.animated
+            img(src="../img/company/questionare09.png", alt="喫煙率")
+          .item.animated
+            img(src="../img/company/questionare10.png", alt="血液型")
+          .item.animated
+            img(src="../img/company/questionare11.png", alt="好きなスポーツは？")
+          .item.animated
+            img(src="../img/company/questionare12.png", alt="趣味は何ですか？")
+          .item.animated
+            img(src="../img/company/questionare13.png", alt="image")

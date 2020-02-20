@@ -1,0 +1,399 @@
+@charset "utf-8"
+
+
+/* COMMON HEADER
+ * -----------------------------------------------*/
+
+header
+  +pie-clearfix
+  +transition(top .8s ease)
+  min-width: $base-wrapper
+  height: 80px
+  position: absolute
+  top: -100px
+  left: 0
+  right: 0
+  z-index: 10000
+  .logo
+    float: left
+    a
+      display: block
+      @extend .trans
+      img
+        display: block
+  .navigation
+    +pie-clearfix
+    float: right
+    padding: 15px 35px 15px 0
+    .menu
+      float: left
+      > li
+        -js-display: flex
+        +display-flex
+        +align-items(center)
+        float: left
+        height: 50px
+        margin-left: 14px
+        position: relative
+        z-index: 10
+        &:first-child
+          margin-left: 0
+        > a
+          +transition(color 1s ease)
+          -js-display: flex
+          +display-flex
+          +align-items(center)
+          height: 50px
+          padding: 0 10px
+          color: #fff
+          font-size: 15px
+          font-weight: bold
+          line-height: 1
+          text-transform: uppercase
+          position: relative
+          .arrow
+            display: none
+        &:hover
+          z-index: 20
+        &:hover > a
+          color: #222
+        .ie9 &:hover > a
+          color: #ddd
+        & > a:after
+          content: " "
+          display: block
+          position: absolute
+          bottom: 0
+          left: 0
+          z-index: 10
+          +opacity(0)
+        &:hover > a:after
+          +opacity(1)
+          z-index: -10
+          +animation(fillMenu .8s forwards)
+          +keyframes(fillMenu)
+            0%
+              width: 0%
+              height: 1px
+              background: #fff
+            50%
+              width: 100%
+              height: 1px
+            100%
+              width: 100%
+              height: 100%
+              background: #fff
+
+    .nav-btn
+      -js-display: flex
+      +display-flex
+      +align-items(center)
+      +justify-content(center)
+      +border-radius(25px)
+      float: left
+      width: 168px
+      height: 50px
+      background: #d52a3c
+      margin-left: 50px
+      position: relative
+      overflow: hidden
+      color: #fff
+      font-size: 16px
+      font-weight: bold
+      line-height: 1
+      text-transform: uppercase
+      &:before
+        content: " "
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 0
+        width: 2px
+        height: 2px
+        background: rgba(255,255,255, .1)
+        +translate(-50%, -50%)
+        +border-radius(50%)
+        +opacity(0)
+        +transform(scale(1))
+        +transition(all .4s cubic-bezier(.165,.84,.44,1))
+      &:hover:before
+        +opacity(1)
+        +transform(scale(100))
+      span
+        position: relative
+        z-index: 1
+        .ie &
+          margin-top: 3px
+    .menu-btn
+      display: none
+
+header
+  .navigation
+    .menu
+      > li
+        .ie9 &,
+        .ie10 &
+          width: auto !important
+          > a
+            position: relative !important
+        > .dropdown
+          position: absolute
+          top: 80%
+          left: 0
+          width: 200px
+          +transition(all .2s ease)
+          +opacity(0)
+          visibility: hidden
+          .ie9 &,
+          .ie10 &
+            left: 0 !important
+            top: 100% !important
+          li
+            border-top: 1px solid #ddd
+            a
+              display: block
+              padding: 15px 10px
+              background: #fff
+              font-size: 13px
+              font-weight: bold
+              line-height: 1
+              color: #222
+              text-transform: uppercase
+              +transition(all .2s ease)
+              &:hover
+                background: #ddd
+        &:hover
+          > .dropdown
+            top: 100%
+            +opacity(1)
+            visibility: visible
+
+header.header-fixed
+  +transition(top 0.5s ease)
+  +box-shadow(0 2px 5px rgba(0,0,0,.1))
+  background: #fff
+  top: -100px
+  position: fixed
+  &.active
+    top: 0
+    .navigation .menu
+      > li
+        > a
+          color: #222
+        &:hover > a
+          color: #fff
+        .ie9 &:hover > a
+          color: #666
+        &:hover > a:after
+          +animation(fillMenuDark .8s forwards)
+          +keyframes(fillMenuDark)
+            0%
+              width: 0%
+              height: 1px
+              background: #222
+            50%
+              width: 100%
+              height: 1px
+            100%
+              width: 100%
+              height: 100%
+              background: #222
+
+        .dropdown
+          li
+            border-top-color: #000
+            a
+              background: #222
+              color: #fff
+              &:hover
+                background: #111
+
+@media (min-width: $base-sm-break + 1)
+  header.header-fixed .dropdown
+    display: none
+  header.header-fixed.active .dropdown
+    display: block
+
+
+header.header-default
+  +transition(top 0.5s ease)
+  background: #fff
+  top: 0
+  position: fixed
+  &.shadow
+    +box-shadow(0 2px 5px rgba(0,0,0,.1))
+  .navigation .menu 
+    > li 
+      > a
+        color: #222
+      &:hover > a
+        color: #fff
+      .ie9 &:hover > a
+        color: #666
+      &:hover > a:after
+        +animation(fillMenuDark .8s forwards)
+        +keyframes(fillMenuDark)
+          0%
+            width: 0%
+            height: 1px
+            background: #222
+          50%
+            width: 100%
+            height: 1px
+          100%
+            width: 100%
+            height: 100%
+            background: #222
+      .dropdown
+        li
+          border-top-color: #000
+          a
+            background: #222
+            color: #fff
+            &:hover
+              background: #111
+
+.ie9 header,
+.ie10 header
+  min-width: 1050px
+
+@media (max-width: 1120px)
+
+  header
+    .navigation
+      padding-right: 20px
+      .menu
+        > li
+          margin-left: 9px
+          a
+            padding: 0 8px
+      .nav-btn
+        margin-left: 30px
+
+@media (max-width: $base-sm-break)
+
+  header
+    +transition(none)
+    min-width: 0
+    height: .8rem
+    padding: .1rem .2rem
+    background: #fff
+    +box-shadow(0 .02rem .06rem rgba(0,0,0,.2))
+    position: fixed
+    top: 0
+    .logo
+      width: 53.33333%
+      padding: .1rem 0
+      img
+        width: 100%
+    .navigation
+      padding: 0
+      .menu
+        display: none
+        float: none
+        position: absolute
+        top: .8rem
+        left: 0
+        right: 0
+        padding: 0 .2rem
+        border-top: 1px solid rgba(0,0,0,.2)
+        background: #fff
+        +box-shadow(0 2px 6px rgba(0,0,0,.2))
+        > li
+          +display-flex
+          +align-items(center)
+          float: none
+          height: auto
+          margin: 0
+          border-top: 1px solid rgba(0,0,0,.2)
+          &:first-child
+            border-top: none
+          > a
+            display: block
+            width: 100%
+            height: auto
+            padding: .3rem 0
+            color: #222 !important
+            font-size: .2rem
+            position: relative
+            &:hover
+              color: #222
+            &:after
+              display: none
+      .nav-btn
+        +border-radius(.3rem)
+        float: none
+        width: 1.5rem
+        height: .6rem
+        margin: 0
+        right: .75rem
+        font-size: .18rem
+        &:before
+          display: none
+      .menu-btn
+        display: block
+        width: .44rem
+        height: .44rem
+        background: url(../img/common/sp/btn_menu.png) 50% 0 no-repeat
+        background-size: 100% auto
+        position: absolute
+        top: 50%
+        right: .2rem
+        +translateY(-50%)
+        &.active
+          background-position: 50% 100%
+
+  header
+    .navigation
+      .menu
+        > li
+          +flex-wrap(wrap)
+          > a
+            position: relative
+          > a .arrow
+            content: " "
+            display: block
+            width: .4rem
+            height: 100%
+            background: url(../img/common/sp/icon23.png) 50% 50% no-repeat
+            background-size: 100% auto
+            position: absolute
+            top: 0
+            right: 0
+          > a .arrow.active
+            +scaleY(-1)
+          > a
+            display: block
+            width: 100%
+          > .dropdown
+            display: none
+            position: static
+            top: 0 !important
+            left: 0
+            width: 100%
+            +transition(none)
+            +opacity(1)
+            visibility: visible
+            li
+              border-top: 1px solid rgba(0,0,0,.2) !important
+              a
+                padding: .25rem .2rem
+                background: #fff !important
+                font-size: .18rem
+                color: #222 !important
+                +transition(none)
+
+  header.header-default
+    +box-shadow(none)
+    &.shadow
+      +box-shadow(0 .02rem .05rem rgba(0,0,0,.1))
+
+  .overlay-menu
+    position: fixed
+    z-index: 9999
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: none

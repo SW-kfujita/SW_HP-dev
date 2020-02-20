@@ -1,0 +1,157 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Shohei.S | スカイウイルで働く人 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、社員についてご紹介します。'
+  -keywords     = '社員紹介,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-staff-people'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          a(href=path+"/staff") スカイウイルの人
+        li
+          span Shohei.S
+          
+    h1.page-title.animated
+      span.line
+      span.title
+        small People of SkyWill 01
+        strong Shohei.S
+
+    .section-people-banner.animated
+      .sec-inner.wrapper
+        .image
+          img(src=path+"/img/staff/banner_img01.jpg", alt="SHOHEI.S")
+            
+    section.section-people-articles
+      h2.sec-title-general.animated
+        strong 自社システムの変更･構成管理
+        small This is my job
+      .sec-inner.bg-gray
+        .grid-horizontal.wrapper.animated
+          .content
+            p 週1回行われるCAB会議で、諮問対象の変更要求に対し承認の可否が話し合われるため、会議で必要となる資料の作成を行います。変更があったシステムに関しては、都度CMDBの更新も行っています。
+          .image
+            img(src=path+"/img/staff/people_img01.jpg", alt="自社システムの変更･構成管理 THIS IS MY JOB")
+    section.section-people-articles
+      h2.sec-title-general.animated
+        strong 優秀社員賞＆特別賞のW受賞
+        small The happiest episode
+      .sec-inner
+        .grid-vertical.wrapper.animated
+          .content
+            p 資格の取得や自社内での取り組みが評価され、優秀社員賞と特別賞を頂くことが出来ました。<br>これまでの努力を評価して貰えたことがとても嬉しく、今後の活力へと繋がりました。
+          .image
+            img(src=path+"/img/staff/people_img02.jpg", alt="優秀社員賞＆特別賞のW受賞 THE HAPPIEST EPISODE")
+    section.section-people-articles
+      h2.sec-title-general.animated
+        strong 社員間のコミュニケーションが良好。<br>未経験入社でも働きやすい環境
+        small Reason why I chose this company
+      .sec-inner.bg-gray.animated
+        .grid-horizontal.wrapper
+          .content
+            p 社内イベントが活発に行われるため、社員間のコミュニケーションを深めやすく互いの情報交換を行いやすい環境です。<br>また、現場業務やキャリアプランについて気軽に相談に乗って頂けるので、未経験で右も左も分からなかった自分も、安心して働くことが出来ています。
+          .image
+            img(src=path+"/img/staff/people_img03.jpg", alt="社員間のコミュニケーションが良好。未経験入社でも働きやすい環境 REASON WHY I CHOSE THIS COMPANY")
+    section.section-people-career
+      .sec-inner.wrapper
+        .grid-carrer.animated
+          .col
+            h3.title これまでのキャリア
+            .content
+              p 1. POSや関連機器のヘルプデスク業務
+              p 2. 自社システムの変更・構成管理業務
+          .col
+            h3.title スカイウイルで実現したいこと
+            .content
+              p WEB開発のPMを目指し、これからスキル、経験を<br class="sm">積んでいきます。
+    section.section-people-schedule
+      .sec-inner.wrapper
+        h2.sec-title-general.animated
+          strong 1日のスケジュール
+          small 1 day schedule
+        .sec-schedule
+          ul.list.list-start
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock01.png", alt="起床")
+              .content
+                h3.title 起床
+                .desc
+                  p 身支度を整えながら、昼食用の弁当を作ります。<br>朝食を食べている時は、ニュースアプリで最新の情報や天気をチェックします。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock02.png", alt="通勤")
+              .content
+                h3.title 通勤
+                .desc
+                  p グループウェアでメッセージのチェックや返信を行ったり、日報を書きます。<br>残りの時間は資格学習や自己啓発系の本を読みます。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock03.png", alt="出社")
+              .content
+                h3.title 出社
+                .desc
+                  p チーム内で業務のタスクが割り振られており、自分が担当するタスクをチェックし、スケジュールを立てます。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock04.png", alt="メールチェック")
+              .content
+                h3.title メールチェック
+                .desc
+                  p 重要度が高そうなメールからチェックしていき、必要に応じて返信します。<br>周知事項が無いかもチェックします。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock05.png", alt="CAB 会議資料の作成")
+              .content
+                h3.title CAB 会議資料の作成
+                .desc
+                  p 諮問対象となる変更要求に対してチェックを行い、指摘事項をまとめます。
+          ul.list.list-end
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock06.png", alt="昼食")
+              .content
+                h3.title 昼食
+                .desc
+                  p 持参した弁当を食べながらアプリでマンガを読み、午後をやり抜くための体力を養います。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock07.png", alt="CAB 会議資料の更新・提出")
+              .content
+                h3.title CAB 会議資料の更新・提出
+                .desc
+                  p 変更要求の追加・更新があった際に、再度チェックを行い、資料を更新します。<br>更新後はプロパーの方に資料を提出します。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock08.png", alt="CAB 会議")
+              .content
+                h3.title CAB 会議
+                .desc
+                  p 会議資料を元に、変更要求に対して承認の可否が話し合われます。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock09.png", alt="CAB 議事録の作成")
+              .content
+                h3.title CAB 議事録の作成
+                .desc
+                  p 会議の議事録を作成します。作成後は会議の出席者や関連部署宛てに資料を提出します。
+            li.animated
+              .time
+                img(src=path+"/img/staff/schedule_icon_clock10.png", alt="退社")
+              .content
+                h3.title 退社
+                .desc
+                  p 業務処理件数、処理にかかった時間を勤怠表に記入して退社します。
+        .offday.animated
+          .content
+            h3.title OFF DAY
+            p 最近はマンガを読むのにハマってます。少年マンガから青年マンガまで色々読みます。知人やネットの情報から面白そうな作品を探します。
+          .image
+            img(src=path+"/img/staff/people_offday_img01.jpg", alt="OFF DAY 最近はマンガを読むのにハマってます。少年マンガから青年マンガまで色々読みます。知人やネットの情報から面白そうな作品を探します。")

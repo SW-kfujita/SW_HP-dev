@@ -1,0 +1,76 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'スカイウイルのSNS紹介 | スカイウィルの仕事 | 株式会社スカイウイル 採用サイト'
+  -description  = '株式会社スカイウイルに就職を希望される皆さまへ、スカイウイルのSNS紹介をご紹介します。'
+  -keywords     = 'sns,採用,中途,インフラ・クラウド構築,アプリケーション開発,システム構築,テクニカルサポート,ITコンサルティング,マーケティングサービス,スカイウイル,skywill'
+  -bodyClass    = 'page-event'
+  -path         = '..'
+
+block container
+  .main
+    .breadcrumb.animated
+      ul
+        li
+          a(href=path+"/") TOP
+        li
+          span スカイウイルのSNS紹介
+
+    h1.page-title.animated
+      span.line
+      span.title
+        small Introduction of SNS of SkyWiLL
+        strong スカイウイルのSNS紹介
+
+    section.section-event-leading.animated
+      .sec-inner.wrapper
+        p 社員同士が仲の良いところ等、会社の雰囲気を知って頂くため、<br class="md">社員交流や社内風景をSNSに投稿しています。
+
+    section.section-event-facebook
+      .sec-inner.wrapper
+        h2.sec-title-general.animated
+          strong Facebook
+          small Facebook
+        .image.animated
+          img(src=path+"/img/event/sample_img01.jpg", alt="社員が集まる定例会や教育講座、勉強会の紹介をしています。オフに有志で行われる季節折々の花見やハロウィン、スポーツなどのイベントの写真も豊富です。")
+        p.desc.animated 社員が集まる定例会や教育講座、勉強会の紹介をしています。オフに有志で行われる季節折々の花見やハロウィン、スポーツなどのイベントの写真も豊富です。
+        .button.animated
+          a.btn-sns(href="#") Facebookはこちら
+
+    section.section-event-sns
+      .sec-inner.wrapper
+        .grid-sns.animated
+          .col
+            h3.title Twitter
+            .image
+              img(src=path+"/img/event/sample_img02.jpg", alt="ちょっとした会社の日常を切り取って、気軽につぶやいています。")
+            p.desc.match-height ちょっとした会社の日常を切り取って、気軽につぶやいています。
+            .button
+              a.btn-sns(href="#") Twitterはこちら
+          .col
+            h3.title instagram
+            .image
+              img(src=path+"/img/event/sample_img02.jpg", alt="社員の豊かな表情を写真や動画で紹介します。")
+            p.desc.match-height 社員の豊かな表情を写真や動画で紹介します。
+            .button
+              a.btn-sns(href="#") instagramはこちら
+
+    section.section-event-articles
+      .sec-inner.wrapper
+        .grid-articles
+          .post.animated
+            .image
+              img(src=path+"/img/event/sample_img03.jpg", alt="世界最大級のビジネス特化型ソーシャル・ネットワーキング・サービス。転職やビジネスで繋がりたい人と繋がって、情報交換できます。")
+            p.desc 世界最大級のビジネス特化型ソーシャル・ネットワーキング・サービス。転職やビジネスで繋がりたい人と繋がって、情報交換できます。
+          .post.animated
+            .image
+              img(src=path+"/img/event/sample_img03.jpg", alt="ソーシャル・リクルーティング・ツール。求人・転職情報を掲載中。登録すると今話題のソーシャル転職・ソー活を手軽に体験できます。")
+            p.desc ソーシャル・リクルーティング・ツール。求人・転職情報を掲載中。登録すると今話題のソーシャル転職・ソー活を手軽に体験できます。
+          .post.animated
+            .image
+              img(src=path+"/img/event/sample_img03.jpg", alt="アプリ開発エンジニアが中心となって、ちょいネタ等、技術談義をしてます。")
+            p.desc アプリ開発エンジニアが中心となって、ちょいネタ等、技術談義をしてます。
+          .post.animated
+            .image
+              img(src=path+"/img/event/sample_img03.jpg", alt="名刺管理ができる無料アプリ。スマホで名刺を撮り、クラウドにデータを保存できます。社員と気軽に名刺交換して下さい。")
+            p.desc 名刺管理ができる無料アプリ。スマホで名刺を撮り、クラウドにデータを保存できます。社員と気軽に名刺交換して下さい。
