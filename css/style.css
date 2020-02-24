@@ -1998,6 +1998,15 @@ footer .coppy-right {
   font-size: 16px;
   line-height: 36px;
 }
+
+.cmn-p dl {
+  font-size: 16px;
+  line-height: 36px;
+}
+.cmn-p dt::after{
+  content: "："
+}
+
 .page-topic .cmn-p {
   margin: 0 2em;
 }
@@ -2090,6 +2099,10 @@ footer .coppy-right {
   }
 
   .cmn-p p {
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+  }
+  .cmn-p dl {
     font-size: 0.2rem;
     line-height: 0.4rem;
   }
@@ -4947,4 +4960,11 @@ footer  .footer-sns ul.list-sns li a img {
     display: -webkit-flex;
     display: flex;
   }
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+.float-left {
+  float: left;
 }
