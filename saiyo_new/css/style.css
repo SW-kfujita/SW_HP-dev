@@ -4800,4 +4800,45 @@ footer .btn-top {
   }
 }
 
+.color-messe {
+  color: #d52a3c;
+}
+
+.disp-flex {
+  display: flex;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.ml-15 {
+  margin-left: 15px !important;
+}
+.mainavi-img  {
+  width: 160px !important;   
+}
+@media screen and (min-width: 1135px){
+  .footer-logo {
+    display: flex;
+  }
+  .mainavi {
+    margin-top: 0px;
+    margin-left: 15px;
+  }  
+}
+@media screen and (max-width: 1134px){
+  .footer-logo {
+    display: block;
+  }
+  .mainavi {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
