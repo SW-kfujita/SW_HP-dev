@@ -1,0 +1,223 @@
+h3{
+  text-align: center;
+  font-size: 24px;
+  color: #285998;
+}
+
+.information{
+  width: 93%;
+  max-width: 430px;
+  margin: 27px auto 0;
+  background: #f5f5f5;
+  padding: 25px 0;
+}
+
+.information-inner{
+  display: inline-block;
+}
+
+.information-text{
+  text-align: left;
+  font-size: 16px;
+  text-indent: -1em;
+  padding-left: 1em;
+  line-height: 1.5em;
+}
+
+.map-title{
+  margin-top: 40px;
+}
+
+.map{
+  margin: 27px auto 0;
+}
+
+.from-train{
+  margin-top: 48px;
+}
+
+.train-ttl{
+  line-height: 56px;
+  font-size: 16px;
+  background: #285998;
+  color: #fff;
+  padding-left: 40px;
+  position: relative;
+}
+
+.train-ttl::after{
+  content: '+';
+  font-size: 16px;
+  line-height: 56px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.train-ttl.active::after{
+  content: '−';
+}
+
+.route-outer{
+  display: none;
+}
+
+.route{
+  display: inline-block;
+  padding: 21px 31px 0;
+  letter-spacing: -1em;
+}
+
+
+.gate-city{
+  padding-top: 0;
+}
+
+
+.route *{
+  letter-spacing: normal;
+}
+
+.route p{
+  font-size: 16px;
+  margin: 17px 0;
+  font-weight: bold;
+}
+
+.route span{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.route li{
+  width: 234px;
+  margin-bottom: 32px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 17px;
+  font-size: 14px;
+}
+
+.route li:first-of-type,
+.route li:nth-of-type(5){
+  margin-left: 0;
+}
+
+.route li dt{
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.address-title{
+  margin-top: 40px;
+}
+
+.address{
+  width: 93%;
+  max-width: 430px;
+  margin: 27px auto 32px;
+  background: #f5f5f5;
+  padding: 25px 0;
+}
+
+.address-inner{
+  display: inline-block;
+}
+
+.address-text{
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+
+@media (max-width: 640px) {
+  h3{
+    font-size: 14px;
+
+  }
+
+  .access-map{
+    padding-top: 0.53rem;
+    padding-bottom: 1.88rem;
+  }
+
+  .information{
+    margin: 17px auto 0;
+    padding: 15px 0;
+  }
+
+  .information-title{
+    margin-top: 40px;
+  }
+
+  .information-text{
+    font-size: 12px;
+  }
+
+  .map-title{
+    margin-top: 30px;
+  }
+
+  .map{
+    margin-top: 13px;
+  }
+
+  .from-train {
+    margin-top: 40px;
+  }
+
+  .train-ttl{
+    line-height: 48px;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .train-ttl::after{
+    line-height: 48px;
+    font-size: 12px;
+  }
+
+  .route {
+    display: inline-block;
+    padding: 21px 10px 0;
+  }
+
+  .route li{
+    width: auto;
+    letter-spacing: -1em;
+    margin: 0 0 24px;
+  }
+
+  .route li *{
+    letter-spacing: normal;
+  }
+
+  .route li img,
+  .route li dl{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .route li img{
+    padding-right: 17px;
+  }
+
+  .route p{
+    margin-top: 0;
+  }
+
+  .address-title {
+    margin-top: 30px;
+  }
+
+  .address {
+    margin: 15px auto 32px;
+    padding: 14px 0;
+  }
+
+  .address-text {
+    font-size: 12px;
+  }
+}
