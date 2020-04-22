@@ -99,13 +99,15 @@ h3{
 }
 
 .route li:first-of-type,
-.route li:nth-of-type(5){
+.route li:nth-of-type(4n + 1){
   margin-left: 0;
 }
 
 .route li dt{
   font-weight: bold;
   margin-bottom: 3px;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 .address-title{
