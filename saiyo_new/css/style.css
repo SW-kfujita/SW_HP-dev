@@ -5671,6 +5671,10 @@ footer .btn-top {
   width: 160px !important;
 }
 
+.mainavi {
+  display: none;
+}
+
 @media screen and (min-width: 1135px) {
   .footer-logo {
     display: flex;
