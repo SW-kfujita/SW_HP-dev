@@ -1288,11 +1288,6 @@ footer .coppy-right {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
 }
 .section-top-service .wrapper {
   position: relative;
