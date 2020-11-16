@@ -2756,7 +2756,7 @@ footer .btn-top {
 .section-top-message {
   height: 600px;
   padding: 85px 6.25%;
-  background: #e2dfd8 url(../img/top/message_bg.jpg) 50% 50% no-repeat;
+  background: #e2dfd8 url(../img/top/message_bg.png) 50% 10% no-repeat;
   background-size: cover;
 }
 
@@ -2787,7 +2787,7 @@ footer .btn-top {
   .section-top-message {
     height: auto;
     padding: 0.7rem 0.2rem;
-    background: #e2dfd8 url(../img/top/sp/message_bg.jpg) 50% 100% no-repeat;
+    background: #e2dfd8 url(../img/top/sp/message_bg.png) 50% 100% no-repeat;
     background-size: 100% auto;
   }
 
@@ -5669,6 +5669,10 @@ footer .btn-top {
 
 .mainavi-img {
   width: 160px !important;
+}
+
+.mainavi {
+  display: none;
 }
 
 @media screen and (min-width: 1135px) {
