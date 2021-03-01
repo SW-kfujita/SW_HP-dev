@@ -5668,8 +5668,22 @@ footer .btn-top {
 }
 
 .mainavi-img {
-  width: 160px !important;
+  background-color: #fff;
+  padding: 0 8px;
+  height: 56px;
 }
+
+@media screen and (max-width: 1135px) {
+  .mainavi-img {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .mainavi-img {
+    margin-left: 8px;
+  }
+}
+
 
 .mainavi {
   display: none;
