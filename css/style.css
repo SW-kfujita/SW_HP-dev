@@ -4959,6 +4959,21 @@ footer  .footer-sns ul.list-sns li a img {
 .mb-1 {
   margin-bottom: 1em;
 }
+.mt-1 {
+  margin-top: 1em;
+}
 .float-left {
   float: left;
+}
+
+.sqa-list {
+  font-size: 16px;
+}
+.sqa-list h2 {
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .sqa-list {
+    font-size: 0.2rem;
+  }
 }
